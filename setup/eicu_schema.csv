@@ -1,0 +1,392 @@
+,table_catalog,table_schema,table_name,column_name,ordinal_position,column_default,is_nullable,data_type,character_maximum_length,character_octet_length,numeric_precision,numeric_precision_radix,numeric_scale,datetime_precision,interval_type,interval_precision,character_set_catalog,character_set_schema,character_set_name,collation_catalog,collation_schema,collation_name,domain_catalog,domain_schema,domain_name,udt_catalog,udt_schema,udt_name,scope_catalog,scope_schema,scope_name,maximum_cardinality,dtd_identifier,is_self_referencing,is_identity,identity_generation,identity_start,identity_increment,identity_maximum,identity_minimum,identity_cycle,is_generated,generation_expression,is_updatable
+0,eicu,eicu_crd,admissiondrug,admissiondrugid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+1,eicu,eicu_crd,admissiondrug,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+2,eicu,eicu_crd,admissiondrug,drugoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+3,eicu,eicu_crd,admissiondrug,drugenteredoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+4,eicu,eicu_crd,admissiondrug,drugnotetype,5,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+5,eicu,eicu_crd,admissiondrug,specialtytype,6,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+6,eicu,eicu_crd,admissiondrug,usertype,7,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+7,eicu,eicu_crd,admissiondrug,rxincluded,8,,YES,character varying,5.0,20.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+8,eicu,eicu_crd,admissiondrug,writtenineicu,9,,YES,character varying,5.0,20.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+9,eicu,eicu_crd,admissiondrug,drugname,10,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+10,eicu,eicu_crd,admissiondrug,drugdosage,11,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+11,eicu,eicu_crd,admissiondrug,drugunit,12,,YES,character varying,1000.0,4000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+12,eicu,eicu_crd,admissiondrug,drugadmitfrequency,13,,NO,character varying,1000.0,4000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,13,NO,NO,,,,,,NO,NEVER,,YES
+13,eicu,eicu_crd,admissiondrug,drughiclseqno,14,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,14,NO,NO,,,,,,NO,NEVER,,YES
+14,eicu,eicu_crd,admissiondx,admissiondxid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+15,eicu,eicu_crd,admissiondx,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+16,eicu,eicu_crd,admissiondx,admitdxenteredoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+17,eicu,eicu_crd,admissiondx,admitdxpath,4,,NO,character varying,500.0,2000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+18,eicu,eicu_crd,admissiondx,admitdxname,5,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+19,eicu,eicu_crd,admissiondx,admitdxtext,6,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+20,eicu,eicu_crd,allergy,allergyid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+21,eicu,eicu_crd,allergy,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+22,eicu,eicu_crd,allergy,allergyoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+23,eicu,eicu_crd,allergy,allergyenteredoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+24,eicu,eicu_crd,allergy,allergynotetype,5,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+25,eicu,eicu_crd,allergy,specialtytype,6,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+26,eicu,eicu_crd,allergy,usertype,7,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+27,eicu,eicu_crd,allergy,rxincluded,8,,YES,character varying,5.0,20.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+28,eicu,eicu_crd,allergy,writtenineicu,9,,YES,character varying,5.0,20.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+29,eicu,eicu_crd,allergy,drugname,10,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+30,eicu,eicu_crd,allergy,allergytype,11,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+31,eicu,eicu_crd,allergy,allergyname,12,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+32,eicu,eicu_crd,allergy,drughiclseqno,13,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,13,NO,NO,,,,,,NO,NEVER,,YES
+33,eicu,eicu_crd,apacheapsvar,apacheapsvarid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+34,eicu,eicu_crd,apacheapsvar,patientunitstayid,2,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+35,eicu,eicu_crd,apacheapsvar,intubated,3,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+36,eicu,eicu_crd,apacheapsvar,vent,4,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+37,eicu,eicu_crd,apacheapsvar,dialysis,5,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+38,eicu,eicu_crd,apacheapsvar,eyes,6,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+39,eicu,eicu_crd,apacheapsvar,motor,7,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+40,eicu,eicu_crd,apacheapsvar,verbal,8,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+41,eicu,eicu_crd,apacheapsvar,meds,9,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+42,eicu,eicu_crd,apacheapsvar,urine,10,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+43,eicu,eicu_crd,apacheapsvar,wbc,11,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+44,eicu,eicu_crd,apacheapsvar,temperature,12,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+45,eicu,eicu_crd,apacheapsvar,respiratoryrate,13,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,13,NO,NO,,,,,,NO,NEVER,,YES
+46,eicu,eicu_crd,apacheapsvar,sodium,14,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,14,NO,NO,,,,,,NO,NEVER,,YES
+47,eicu,eicu_crd,apacheapsvar,heartrate,15,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,15,NO,NO,,,,,,NO,NEVER,,YES
+48,eicu,eicu_crd,apacheapsvar,meanbp,16,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,16,NO,NO,,,,,,NO,NEVER,,YES
+49,eicu,eicu_crd,apacheapsvar,ph,17,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,17,NO,NO,,,,,,NO,NEVER,,YES
+50,eicu,eicu_crd,apacheapsvar,hematocrit,18,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,18,NO,NO,,,,,,NO,NEVER,,YES
+51,eicu,eicu_crd,apacheapsvar,creatinine,19,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,19,NO,NO,,,,,,NO,NEVER,,YES
+52,eicu,eicu_crd,apacheapsvar,albumin,20,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,20,NO,NO,,,,,,NO,NEVER,,YES
+53,eicu,eicu_crd,apacheapsvar,pao2,21,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,21,NO,NO,,,,,,NO,NEVER,,YES
+54,eicu,eicu_crd,apacheapsvar,pco2,22,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,22,NO,NO,,,,,,NO,NEVER,,YES
+55,eicu,eicu_crd,apacheapsvar,bun,23,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,23,NO,NO,,,,,,NO,NEVER,,YES
+56,eicu,eicu_crd,apacheapsvar,glucose,24,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,24,NO,NO,,,,,,NO,NEVER,,YES
+57,eicu,eicu_crd,apacheapsvar,bilirubin,25,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,25,NO,NO,,,,,,NO,NEVER,,YES
+58,eicu,eicu_crd,apacheapsvar,fio2,26,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,26,NO,NO,,,,,,NO,NEVER,,YES
+59,eicu,eicu_crd,apachepatientresult,apachepatientresultsid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+60,eicu,eicu_crd,apachepatientresult,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+61,eicu,eicu_crd,apachepatientresult,physicianspeciality,3,,YES,character varying,50.0,200.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+62,eicu,eicu_crd,apachepatientresult,physicianinterventioncategory,4,,YES,character varying,50.0,200.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+63,eicu,eicu_crd,apachepatientresult,acutephysiologyscore,5,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+64,eicu,eicu_crd,apachepatientresult,apachescore,6,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+65,eicu,eicu_crd,apachepatientresult,apacheversion,7,,NO,character varying,5.0,20.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+66,eicu,eicu_crd,apachepatientresult,predictedicumortality,8,,YES,character varying,50.0,200.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+67,eicu,eicu_crd,apachepatientresult,actualicumortality,9,,YES,character varying,50.0,200.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+68,eicu,eicu_crd,apachepatientresult,predictediculos,10,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+69,eicu,eicu_crd,apachepatientresult,actualiculos,11,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+70,eicu,eicu_crd,apachepatientresult,predictedhospitalmortality,12,,YES,character varying,50.0,200.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+71,eicu,eicu_crd,apachepatientresult,actualhospitalmortality,13,,YES,character varying,50.0,200.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,13,NO,NO,,,,,,NO,NEVER,,YES
+72,eicu,eicu_crd,apachepatientresult,predictedhospitallos,14,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,14,NO,NO,,,,,,NO,NEVER,,YES
+73,eicu,eicu_crd,apachepatientresult,actualhospitallos,15,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,15,NO,NO,,,,,,NO,NEVER,,YES
+74,eicu,eicu_crd,apachepatientresult,preopmi,16,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,16,NO,NO,,,,,,NO,NEVER,,YES
+75,eicu,eicu_crd,apachepatientresult,preopcardiaccath,17,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,17,NO,NO,,,,,,NO,NEVER,,YES
+76,eicu,eicu_crd,apachepatientresult,ptcawithin24h,18,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,18,NO,NO,,,,,,NO,NEVER,,YES
+77,eicu,eicu_crd,apachepatientresult,unabridgedunitlos,19,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,19,NO,NO,,,,,,NO,NEVER,,YES
+78,eicu,eicu_crd,apachepatientresult,unabridgedhosplos,20,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,20,NO,NO,,,,,,NO,NEVER,,YES
+79,eicu,eicu_crd,apachepatientresult,actualventdays,21,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,21,NO,NO,,,,,,NO,NEVER,,YES
+80,eicu,eicu_crd,apachepatientresult,predventdays,22,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,22,NO,NO,,,,,,NO,NEVER,,YES
+81,eicu,eicu_crd,apachepatientresult,unabridgedactualventdays,23,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,23,NO,NO,,,,,,NO,NEVER,,YES
+82,eicu,eicu_crd,apachepredvar,apachepredvarid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+83,eicu,eicu_crd,apachepredvar,patientunitstayid,2,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+84,eicu,eicu_crd,apachepredvar,sicuday,3,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+85,eicu,eicu_crd,apachepredvar,saps3day1,4,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+86,eicu,eicu_crd,apachepredvar,saps3today,5,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+87,eicu,eicu_crd,apachepredvar,saps3yesterday,6,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+88,eicu,eicu_crd,apachepredvar,gender,7,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+89,eicu,eicu_crd,apachepredvar,teachtype,8,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+90,eicu,eicu_crd,apachepredvar,region,9,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+91,eicu,eicu_crd,apachepredvar,bedcount,10,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+92,eicu,eicu_crd,apachepredvar,admitsource,11,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+93,eicu,eicu_crd,apachepredvar,graftcount,12,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+94,eicu,eicu_crd,apachepredvar,meds,13,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,13,NO,NO,,,,,,NO,NEVER,,YES
+95,eicu,eicu_crd,apachepredvar,verbal,14,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,14,NO,NO,,,,,,NO,NEVER,,YES
+96,eicu,eicu_crd,apachepredvar,motor,15,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,15,NO,NO,,,,,,NO,NEVER,,YES
+97,eicu,eicu_crd,apachepredvar,eyes,16,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,16,NO,NO,,,,,,NO,NEVER,,YES
+98,eicu,eicu_crd,apachepredvar,age,17,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,17,NO,NO,,,,,,NO,NEVER,,YES
+99,eicu,eicu_crd,apachepredvar,admitdiagnosis,18,,YES,character varying,11.0,44.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,18,NO,NO,,,,,,NO,NEVER,,YES
+100,eicu,eicu_crd,apachepredvar,thrombolytics,19,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,19,NO,NO,,,,,,NO,NEVER,,YES
+101,eicu,eicu_crd,apachepredvar,diedinhospital,20,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,20,NO,NO,,,,,,NO,NEVER,,YES
+102,eicu,eicu_crd,apachepredvar,aids,21,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,21,NO,NO,,,,,,NO,NEVER,,YES
+103,eicu,eicu_crd,apachepredvar,hepaticfailure,22,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,22,NO,NO,,,,,,NO,NEVER,,YES
+104,eicu,eicu_crd,apachepredvar,lymphoma,23,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,23,NO,NO,,,,,,NO,NEVER,,YES
+105,eicu,eicu_crd,apachepredvar,metastaticcancer,24,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,24,NO,NO,,,,,,NO,NEVER,,YES
+106,eicu,eicu_crd,apachepredvar,leukemia,25,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,25,NO,NO,,,,,,NO,NEVER,,YES
+107,eicu,eicu_crd,apachepredvar,immunosuppression,26,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,26,NO,NO,,,,,,NO,NEVER,,YES
+108,eicu,eicu_crd,apachepredvar,cirrhosis,27,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,27,NO,NO,,,,,,NO,NEVER,,YES
+109,eicu,eicu_crd,apachepredvar,electivesurgery,28,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,28,NO,NO,,,,,,NO,NEVER,,YES
+110,eicu,eicu_crd,apachepredvar,activetx,29,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,29,NO,NO,,,,,,NO,NEVER,,YES
+111,eicu,eicu_crd,apachepredvar,readmit,30,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,30,NO,NO,,,,,,NO,NEVER,,YES
+112,eicu,eicu_crd,apachepredvar,ima,31,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,31,NO,NO,,,,,,NO,NEVER,,YES
+113,eicu,eicu_crd,apachepredvar,midur,32,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,32,NO,NO,,,,,,NO,NEVER,,YES
+114,eicu,eicu_crd,apachepredvar,ventday1,33,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,33,NO,NO,,,,,,NO,NEVER,,YES
+115,eicu,eicu_crd,apachepredvar,oobventday1,34,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,34,NO,NO,,,,,,NO,NEVER,,YES
+116,eicu,eicu_crd,apachepredvar,oobintubday1,35,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,35,NO,NO,,,,,,NO,NEVER,,YES
+117,eicu,eicu_crd,apachepredvar,diabetes,36,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,36,NO,NO,,,,,,NO,NEVER,,YES
+118,eicu,eicu_crd,apachepredvar,managementsystem,37,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,37,NO,NO,,,,,,NO,NEVER,,YES
+119,eicu,eicu_crd,apachepredvar,var03hspxlos,38,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,38,NO,NO,,,,,,NO,NEVER,,YES
+120,eicu,eicu_crd,apachepredvar,pao2,39,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,39,NO,NO,,,,,,NO,NEVER,,YES
+121,eicu,eicu_crd,apachepredvar,fio2,40,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,40,NO,NO,,,,,,NO,NEVER,,YES
+122,eicu,eicu_crd,apachepredvar,ejectfx,41,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,41,NO,NO,,,,,,NO,NEVER,,YES
+123,eicu,eicu_crd,apachepredvar,creatinine,42,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,42,NO,NO,,,,,,NO,NEVER,,YES
+124,eicu,eicu_crd,apachepredvar,dischargelocation,43,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,43,NO,NO,,,,,,NO,NEVER,,YES
+125,eicu,eicu_crd,apachepredvar,visitnumber,44,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,44,NO,NO,,,,,,NO,NEVER,,YES
+126,eicu,eicu_crd,apachepredvar,amilocation,45,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,45,NO,NO,,,,,,NO,NEVER,,YES
+127,eicu,eicu_crd,apachepredvar,day1meds,46,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,46,NO,NO,,,,,,NO,NEVER,,YES
+128,eicu,eicu_crd,apachepredvar,day1verbal,47,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,47,NO,NO,,,,,,NO,NEVER,,YES
+129,eicu,eicu_crd,apachepredvar,day1motor,48,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,48,NO,NO,,,,,,NO,NEVER,,YES
+130,eicu,eicu_crd,apachepredvar,day1eyes,49,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,49,NO,NO,,,,,,NO,NEVER,,YES
+131,eicu,eicu_crd,apachepredvar,day1pao2,50,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,50,NO,NO,,,,,,NO,NEVER,,YES
+132,eicu,eicu_crd,apachepredvar,day1fio2,51,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,51,NO,NO,,,,,,NO,NEVER,,YES
+133,eicu,eicu_crd,careplancareprovider,cplcareprovderid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+134,eicu,eicu_crd,careplancareprovider,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+135,eicu,eicu_crd,careplancareprovider,careprovidersaveoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+136,eicu,eicu_crd,careplancareprovider,providertype,4,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+137,eicu,eicu_crd,careplancareprovider,specialty,5,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+138,eicu,eicu_crd,careplancareprovider,interventioncategory,6,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+139,eicu,eicu_crd,careplancareprovider,managingphysician,7,,YES,character varying,50.0,200.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+140,eicu,eicu_crd,careplancareprovider,activeupondischarge,8,,NO,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+141,eicu,eicu_crd,careplaneol,cpleolid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+142,eicu,eicu_crd,careplaneol,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+143,eicu,eicu_crd,careplaneol,cpleolsaveoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+144,eicu,eicu_crd,careplaneol,cpleoldiscussionoffset,4,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+145,eicu,eicu_crd,careplaneol,activeupondischarge,5,,YES,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+146,eicu,eicu_crd,careplangeneral,cplgeneralid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+147,eicu,eicu_crd,careplangeneral,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+148,eicu,eicu_crd,careplangeneral,activeupondischarge,3,,NO,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+149,eicu,eicu_crd,careplangeneral,cplitemoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+150,eicu,eicu_crd,careplangeneral,cplgroup,5,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+151,eicu,eicu_crd,careplangeneral,cplitemvalue,6,,YES,character varying,1024.0,4096.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+152,eicu,eicu_crd,careplangoal,cplgoalid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+153,eicu,eicu_crd,careplangoal,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+154,eicu,eicu_crd,careplangoal,cplgoaloffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+155,eicu,eicu_crd,careplangoal,cplgoalcategory,4,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+156,eicu,eicu_crd,careplangoal,cplgoalvalue,5,,YES,character varying,1000.0,4000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+157,eicu,eicu_crd,careplangoal,cplgoalstatus,6,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+158,eicu,eicu_crd,careplangoal,activeupondischarge,7,,NO,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+159,eicu,eicu_crd,careplaninfectiousdisease,cplinfectid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+160,eicu,eicu_crd,careplaninfectiousdisease,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+161,eicu,eicu_crd,careplaninfectiousdisease,activeupondischarge,3,,NO,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+162,eicu,eicu_crd,careplaninfectiousdisease,cplinfectdiseaseoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+163,eicu,eicu_crd,careplaninfectiousdisease,infectdiseasesite,5,,YES,character varying,64.0,256.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+164,eicu,eicu_crd,careplaninfectiousdisease,infectdiseaseassessment,6,,YES,character varying,64.0,256.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+165,eicu,eicu_crd,careplaninfectiousdisease,responsetotherapy,7,,YES,character varying,32.0,128.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+166,eicu,eicu_crd,careplaninfectiousdisease,treatment,8,,YES,character varying,32.0,128.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+167,eicu,eicu_crd,customlab,customlabid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+168,eicu,eicu_crd,customlab,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+169,eicu,eicu_crd,customlab,labotheroffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+170,eicu,eicu_crd,customlab,labothertypeid,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+171,eicu,eicu_crd,customlab,labothername,5,,YES,character varying,64.0,256.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+172,eicu,eicu_crd,customlab,labotherresult,6,,YES,character varying,64.0,256.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+173,eicu,eicu_crd,customlab,labothervaluetext,7,,YES,character varying,128.0,512.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+174,eicu,eicu_crd,diagnosis,diagnosisid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+175,eicu,eicu_crd,diagnosis,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+176,eicu,eicu_crd,diagnosis,activeupondischarge,3,,YES,character varying,64.0,256.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+177,eicu,eicu_crd,diagnosis,diagnosisoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+178,eicu,eicu_crd,diagnosis,diagnosisstring,5,,NO,character varying,200.0,800.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+179,eicu,eicu_crd,diagnosis,icd9code,6,,YES,character varying,100.0,400.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+180,eicu,eicu_crd,diagnosis,diagnosispriority,7,,NO,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+181,eicu,eicu_crd,hospital,hospitalid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+182,eicu,eicu_crd,hospital,numbedscategory,2,,YES,character varying,32.0,128.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+183,eicu,eicu_crd,hospital,teachingstatus,3,,YES,boolean,,,,,,,,,,,,,,,,,,eicu,pg_catalog,bool,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+184,eicu,eicu_crd,hospital,region,4,,YES,character varying,64.0,256.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+185,eicu,eicu_crd,infusiondrug,infusiondrugid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+186,eicu,eicu_crd,infusiondrug,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+187,eicu,eicu_crd,infusiondrug,infusionoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+188,eicu,eicu_crd,infusiondrug,drugname,4,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+189,eicu,eicu_crd,infusiondrug,drugrate,5,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+190,eicu,eicu_crd,infusiondrug,infusionrate,6,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+191,eicu,eicu_crd,infusiondrug,drugamount,7,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+192,eicu,eicu_crd,infusiondrug,volumeoffluid,8,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+193,eicu,eicu_crd,infusiondrug,patientweight,9,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+194,eicu,eicu_crd,intakeoutput,intakeoutputid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+195,eicu,eicu_crd,intakeoutput,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+196,eicu,eicu_crd,intakeoutput,intakeoutputoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+197,eicu,eicu_crd,intakeoutput,intaketotal,4,,YES,numeric,,,12.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+198,eicu,eicu_crd,intakeoutput,outputtotal,5,,YES,numeric,,,12.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+199,eicu,eicu_crd,intakeoutput,dialysistotal,6,,YES,numeric,,,12.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+200,eicu,eicu_crd,intakeoutput,nettotal,7,,YES,numeric,,,12.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+201,eicu,eicu_crd,intakeoutput,intakeoutputentryoffset,8,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+202,eicu,eicu_crd,intakeoutput,cellpath,9,,YES,character varying,500.0,2000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+203,eicu,eicu_crd,intakeoutput,celllabel,10,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+204,eicu,eicu_crd,intakeoutput,cellvaluenumeric,11,,NO,numeric,,,12.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+205,eicu,eicu_crd,intakeoutput,cellvaluetext,12,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+206,eicu,eicu_crd,lab,labid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+207,eicu,eicu_crd,lab,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+208,eicu,eicu_crd,lab,labresultoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+209,eicu,eicu_crd,lab,labtypeid,4,,NO,numeric,,,3.0,10.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+210,eicu,eicu_crd,lab,labname,5,,YES,character varying,256.0,1024.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+211,eicu,eicu_crd,lab,labresult,6,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+212,eicu,eicu_crd,lab,labresulttext,7,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+213,eicu,eicu_crd,lab,labmeasurenamesystem,8,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+214,eicu,eicu_crd,lab,labmeasurenameinterface,9,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+215,eicu,eicu_crd,lab,labresultrevisedoffset,10,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+216,eicu,eicu_crd,medication,medicationid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+217,eicu,eicu_crd,medication,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+218,eicu,eicu_crd,medication,drugorderoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+219,eicu,eicu_crd,medication,drugstartoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+220,eicu,eicu_crd,medication,drugivadmixture,5,,NO,character varying,6.0,24.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+221,eicu,eicu_crd,medication,drugordercancelled,6,,NO,character varying,6.0,24.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+222,eicu,eicu_crd,medication,drugname,7,,YES,character varying,220.0,880.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+223,eicu,eicu_crd,medication,drughiclseqno,8,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+224,eicu,eicu_crd,medication,dosage,9,,YES,character varying,60.0,240.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+225,eicu,eicu_crd,medication,routeadmin,10,,YES,character varying,120.0,480.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+226,eicu,eicu_crd,medication,frequency,11,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+227,eicu,eicu_crd,medication,loadingdose,12,,NO,character varying,120.0,480.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+228,eicu,eicu_crd,medication,prn,13,,NO,character varying,6.0,24.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,13,NO,NO,,,,,,NO,NEVER,,YES
+229,eicu,eicu_crd,medication,drugstopoffset,14,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,14,NO,NO,,,,,,NO,NEVER,,YES
+230,eicu,eicu_crd,medication,gtc,15,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,15,NO,NO,,,,,,NO,NEVER,,YES
+231,eicu,eicu_crd,microlab,microlabid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+232,eicu,eicu_crd,microlab,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+233,eicu,eicu_crd,microlab,culturetakenoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+234,eicu,eicu_crd,microlab,culturesite,4,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+235,eicu,eicu_crd,microlab,organism,5,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+236,eicu,eicu_crd,microlab,antibiotic,6,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+237,eicu,eicu_crd,microlab,sensitivitylevel,7,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+238,eicu,eicu_crd,note,noteid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+239,eicu,eicu_crd,note,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+240,eicu,eicu_crd,note,noteoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+241,eicu,eicu_crd,note,noteenteredoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+242,eicu,eicu_crd,note,notetype,5,,NO,character varying,50.0,200.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+243,eicu,eicu_crd,note,notepath,6,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+244,eicu,eicu_crd,note,notevalue,7,,YES,character varying,150.0,600.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+245,eicu,eicu_crd,note,notetext,8,,YES,character varying,500.0,2000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+246,eicu,eicu_crd,nurseassessment,nurseassessid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+247,eicu,eicu_crd,nurseassessment,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+248,eicu,eicu_crd,nurseassessment,nurseassessoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+249,eicu,eicu_crd,nurseassessment,nurseassessentryoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+250,eicu,eicu_crd,nurseassessment,cellattributepath,5,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+251,eicu,eicu_crd,nurseassessment,celllabel,6,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+252,eicu,eicu_crd,nurseassessment,cellattribute,7,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+253,eicu,eicu_crd,nurseassessment,cellattributevalue,8,,YES,character varying,4000.0,16000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+254,eicu,eicu_crd,nursecare,nursecareid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+255,eicu,eicu_crd,nursecare,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+256,eicu,eicu_crd,nursecare,celllabel,3,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+257,eicu,eicu_crd,nursecare,nursecareoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+258,eicu,eicu_crd,nursecare,nursecareentryoffset,5,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+259,eicu,eicu_crd,nursecare,cellattributepath,6,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+260,eicu,eicu_crd,nursecare,cellattribute,7,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+261,eicu,eicu_crd,nursecare,cellattributevalue,8,,YES,character varying,4000.0,16000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+262,eicu,eicu_crd,nursecharting,nursingchartid,1,,NO,bigint,,,64.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int8,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+263,eicu,eicu_crd,nursecharting,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+264,eicu,eicu_crd,nursecharting,nursingchartoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+265,eicu,eicu_crd,nursecharting,nursingchartentryoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+266,eicu,eicu_crd,nursecharting,nursingchartcelltypecat,5,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+267,eicu,eicu_crd,nursecharting,nursingchartcelltypevallabel,6,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+268,eicu,eicu_crd,nursecharting,nursingchartcelltypevalname,7,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+269,eicu,eicu_crd,nursecharting,nursingchartvalue,8,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+270,eicu,eicu_crd,pasthistory,pasthistoryid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+271,eicu,eicu_crd,pasthistory,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+272,eicu,eicu_crd,pasthistory,pasthistoryoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+273,eicu,eicu_crd,pasthistory,pasthistoryenteredoffset,4,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+274,eicu,eicu_crd,pasthistory,pasthistorynotetype,5,,YES,character varying,40.0,160.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+275,eicu,eicu_crd,pasthistory,pasthistorypath,6,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+276,eicu,eicu_crd,pasthistory,pasthistoryvalue,7,,YES,character varying,100.0,400.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+277,eicu,eicu_crd,pasthistory,pasthistoryvaluetext,8,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+278,eicu,eicu_crd,patient,patientunitstayid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+279,eicu,eicu_crd,patient,patienthealthsystemstayid,2,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+280,eicu,eicu_crd,patient,gender,3,,YES,character varying,25.0,100.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+281,eicu,eicu_crd,patient,age,4,,YES,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+282,eicu,eicu_crd,patient,ethnicity,5,,YES,character varying,50.0,200.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+283,eicu,eicu_crd,patient,hospitalid,6,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+284,eicu,eicu_crd,patient,wardid,7,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+285,eicu,eicu_crd,patient,apacheadmissiondx,8,,YES,character varying,1000.0,4000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+286,eicu,eicu_crd,patient,admissionheight,9,,YES,numeric,,,10.0,10.0,2.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+287,eicu,eicu_crd,patient,hospitaladmittime24,10,,YES,character varying,8.0,32.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+288,eicu,eicu_crd,patient,hospitaladmitoffset,11,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+289,eicu,eicu_crd,patient,hospitaladmitsource,12,,YES,character varying,30.0,120.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+290,eicu,eicu_crd,patient,hospitaldischargeyear,13,,YES,smallint,,,16.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int2,,,,,13,NO,NO,,,,,,NO,NEVER,,YES
+291,eicu,eicu_crd,patient,hospitaldischargetime24,14,,YES,character varying,8.0,32.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,14,NO,NO,,,,,,NO,NEVER,,YES
+292,eicu,eicu_crd,patient,hospitaldischargeoffset,15,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,15,NO,NO,,,,,,NO,NEVER,,YES
+293,eicu,eicu_crd,patient,hospitaldischargelocation,16,,YES,character varying,100.0,400.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,16,NO,NO,,,,,,NO,NEVER,,YES
+294,eicu,eicu_crd,patient,hospitaldischargestatus,17,,YES,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,17,NO,NO,,,,,,NO,NEVER,,YES
+295,eicu,eicu_crd,patient,unittype,18,,YES,character varying,50.0,200.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,18,NO,NO,,,,,,NO,NEVER,,YES
+296,eicu,eicu_crd,patient,unitadmittime24,19,,YES,character varying,8.0,32.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,19,NO,NO,,,,,,NO,NEVER,,YES
+297,eicu,eicu_crd,patient,unitadmitsource,20,,YES,character varying,100.0,400.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,20,NO,NO,,,,,,NO,NEVER,,YES
+298,eicu,eicu_crd,patient,unitvisitnumber,21,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,21,NO,NO,,,,,,NO,NEVER,,YES
+299,eicu,eicu_crd,patient,unitstaytype,22,,YES,character varying,15.0,60.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,22,NO,NO,,,,,,NO,NEVER,,YES
+300,eicu,eicu_crd,patient,admissionweight,23,,YES,numeric,,,10.0,10.0,2.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,23,NO,NO,,,,,,NO,NEVER,,YES
+301,eicu,eicu_crd,patient,dischargeweight,24,,YES,numeric,,,10.0,10.0,2.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,24,NO,NO,,,,,,NO,NEVER,,YES
+302,eicu,eicu_crd,patient,unitdischargetime24,25,,YES,character varying,8.0,32.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,25,NO,NO,,,,,,NO,NEVER,,YES
+303,eicu,eicu_crd,patient,unitdischargeoffset,26,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,26,NO,NO,,,,,,NO,NEVER,,YES
+304,eicu,eicu_crd,patient,unitdischargelocation,27,,YES,character varying,100.0,400.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,27,NO,NO,,,,,,NO,NEVER,,YES
+305,eicu,eicu_crd,patient,unitdischargestatus,28,,YES,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,28,NO,NO,,,,,,NO,NEVER,,YES
+306,eicu,eicu_crd,patient,uniquepid,29,,YES,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,29,NO,NO,,,,,,NO,NEVER,,YES
+307,eicu,eicu_crd,physicalexam,physicalexamid,1,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+308,eicu,eicu_crd,physicalexam,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+309,eicu,eicu_crd,physicalexam,physicalexamoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+310,eicu,eicu_crd,physicalexam,physicalexampath,4,,NO,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+311,eicu,eicu_crd,physicalexam,physicalexamvalue,5,,YES,character varying,100.0,400.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+312,eicu,eicu_crd,physicalexam,physicalexamtext,6,,YES,character varying,500.0,2000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+313,eicu,eicu_crd,respiratorycare,respcareid,1,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+314,eicu,eicu_crd,respiratorycare,patientunitstayid,2,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+315,eicu,eicu_crd,respiratorycare,respcarestatusoffset,3,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+316,eicu,eicu_crd,respiratorycare,currenthistoryseqnum,4,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+317,eicu,eicu_crd,respiratorycare,airwaytype,5,,YES,character varying,30.0,120.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+318,eicu,eicu_crd,respiratorycare,airwaysize,6,,YES,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+319,eicu,eicu_crd,respiratorycare,airwayposition,7,,YES,character varying,32.0,128.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+320,eicu,eicu_crd,respiratorycare,cuffpressure,8,,YES,numeric,,,5.0,10.0,1.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+321,eicu,eicu_crd,respiratorycare,ventstartoffset,9,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+322,eicu,eicu_crd,respiratorycare,ventendoffset,10,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+323,eicu,eicu_crd,respiratorycare,priorventstartoffset,11,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+324,eicu,eicu_crd,respiratorycare,priorventendoffset,12,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+325,eicu,eicu_crd,respiratorycare,apneaparams,13,,YES,character varying,80.0,320.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,13,NO,NO,,,,,,NO,NEVER,,YES
+326,eicu,eicu_crd,respiratorycare,lowexhmvlimit,14,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,14,NO,NO,,,,,,NO,NEVER,,YES
+327,eicu,eicu_crd,respiratorycare,hiexhmvlimit,15,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,15,NO,NO,,,,,,NO,NEVER,,YES
+328,eicu,eicu_crd,respiratorycare,lowexhtvlimit,16,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,16,NO,NO,,,,,,NO,NEVER,,YES
+329,eicu,eicu_crd,respiratorycare,hipeakpreslimit,17,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,17,NO,NO,,,,,,NO,NEVER,,YES
+330,eicu,eicu_crd,respiratorycare,lowpeakpreslimit,18,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,18,NO,NO,,,,,,NO,NEVER,,YES
+331,eicu,eicu_crd,respiratorycare,hirespratelimit,19,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,19,NO,NO,,,,,,NO,NEVER,,YES
+332,eicu,eicu_crd,respiratorycare,lowrespratelimit,20,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,20,NO,NO,,,,,,NO,NEVER,,YES
+333,eicu,eicu_crd,respiratorycare,sighpreslimit,21,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,21,NO,NO,,,,,,NO,NEVER,,YES
+334,eicu,eicu_crd,respiratorycare,lowironoxlimit,22,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,22,NO,NO,,,,,,NO,NEVER,,YES
+335,eicu,eicu_crd,respiratorycare,highironoxlimit,23,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,23,NO,NO,,,,,,NO,NEVER,,YES
+336,eicu,eicu_crd,respiratorycare,meanairwaypreslimit,24,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,24,NO,NO,,,,,,NO,NEVER,,YES
+337,eicu,eicu_crd,respiratorycare,peeplimit,25,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,25,NO,NO,,,,,,NO,NEVER,,YES
+338,eicu,eicu_crd,respiratorycare,cpaplimit,26,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,26,NO,NO,,,,,,NO,NEVER,,YES
+339,eicu,eicu_crd,respiratorycare,setapneainterval,27,,YES,character varying,80.0,320.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,27,NO,NO,,,,,,NO,NEVER,,YES
+340,eicu,eicu_crd,respiratorycare,setapneatv,28,,YES,character varying,80.0,320.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,28,NO,NO,,,,,,NO,NEVER,,YES
+341,eicu,eicu_crd,respiratorycare,setapneaippeephigh,29,,YES,character varying,80.0,320.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,29,NO,NO,,,,,,NO,NEVER,,YES
+342,eicu,eicu_crd,respiratorycare,setapnearr,30,,YES,character varying,80.0,320.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,30,NO,NO,,,,,,NO,NEVER,,YES
+343,eicu,eicu_crd,respiratorycare,setapneapeakflow,31,,YES,character varying,80.0,320.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,31,NO,NO,,,,,,NO,NEVER,,YES
+344,eicu,eicu_crd,respiratorycare,setapneainsptime,32,,YES,character varying,80.0,320.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,32,NO,NO,,,,,,NO,NEVER,,YES
+345,eicu,eicu_crd,respiratorycare,setapneaie,33,,YES,character varying,80.0,320.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,33,NO,NO,,,,,,NO,NEVER,,YES
+346,eicu,eicu_crd,respiratorycare,setapneafio2,34,,YES,character varying,80.0,320.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,34,NO,NO,,,,,,NO,NEVER,,YES
+347,eicu,eicu_crd,respiratorycharting,respchartid,1,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+348,eicu,eicu_crd,respiratorycharting,patientunitstayid,2,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+349,eicu,eicu_crd,respiratorycharting,respchartoffset,3,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+350,eicu,eicu_crd,respiratorycharting,respchartentryoffset,4,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+351,eicu,eicu_crd,respiratorycharting,respcharttypecat,5,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+352,eicu,eicu_crd,respiratorycharting,respchartvaluelabel,6,,YES,character varying,255.0,1020.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+353,eicu,eicu_crd,respiratorycharting,respchartvalue,7,,YES,character varying,1000.0,4000.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+354,eicu,eicu_crd,treatment,treatmentid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+355,eicu,eicu_crd,treatment,patientunitstayid,2,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+356,eicu,eicu_crd,treatment,treatmentoffset,3,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+357,eicu,eicu_crd,treatment,treatmentstring,4,,YES,character varying,200.0,800.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+358,eicu,eicu_crd,treatment,activeupondischarge,5,,YES,character varying,10.0,40.0,,,,,,,,,,,,,,,,eicu,pg_catalog,varchar,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+359,eicu,eicu_crd,vitalaperiodic,vitalaperiodicid,1,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+360,eicu,eicu_crd,vitalaperiodic,patientunitstayid,2,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+361,eicu,eicu_crd,vitalaperiodic,observationoffset,3,,NO,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+362,eicu,eicu_crd,vitalaperiodic,noninvasivesystolic,4,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+363,eicu,eicu_crd,vitalaperiodic,noninvasivediastolic,5,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+364,eicu,eicu_crd,vitalaperiodic,noninvasivemean,6,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+365,eicu,eicu_crd,vitalaperiodic,paop,7,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+366,eicu,eicu_crd,vitalaperiodic,cardiacoutput,8,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+367,eicu,eicu_crd,vitalaperiodic,cardiacinput,9,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+368,eicu,eicu_crd,vitalaperiodic,svr,10,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+369,eicu,eicu_crd,vitalaperiodic,svri,11,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+370,eicu,eicu_crd,vitalaperiodic,pvr,12,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+371,eicu,eicu_crd,vitalaperiodic,pvri,13,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,13,NO,NO,,,,,,NO,NEVER,,YES
+372,eicu,eicu_crd,vitalperiodic,vitalperiodicid,1,,NO,bigint,,,64.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int8,,,,,1,NO,NO,,,,,,NO,NEVER,,YES
+373,eicu,eicu_crd,vitalperiodic,patientunitstayid,2,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,2,NO,NO,,,,,,NO,NEVER,,YES
+374,eicu,eicu_crd,vitalperiodic,observationoffset,3,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,3,NO,NO,,,,,,NO,NEVER,,YES
+375,eicu,eicu_crd,vitalperiodic,temperature,4,,YES,numeric,,,11.0,10.0,4.0,,,,,,,,,,,,,eicu,pg_catalog,numeric,,,,,4,NO,NO,,,,,,NO,NEVER,,YES
+376,eicu,eicu_crd,vitalperiodic,sao2,5,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,5,NO,NO,,,,,,NO,NEVER,,YES
+377,eicu,eicu_crd,vitalperiodic,heartrate,6,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,6,NO,NO,,,,,,NO,NEVER,,YES
+378,eicu,eicu_crd,vitalperiodic,respiration,7,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,7,NO,NO,,,,,,NO,NEVER,,YES
+379,eicu,eicu_crd,vitalperiodic,cvp,8,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,8,NO,NO,,,,,,NO,NEVER,,YES
+380,eicu,eicu_crd,vitalperiodic,etco2,9,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,9,NO,NO,,,,,,NO,NEVER,,YES
+381,eicu,eicu_crd,vitalperiodic,systemicsystolic,10,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,10,NO,NO,,,,,,NO,NEVER,,YES
+382,eicu,eicu_crd,vitalperiodic,systemicdiastolic,11,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,11,NO,NO,,,,,,NO,NEVER,,YES
+383,eicu,eicu_crd,vitalperiodic,systemicmean,12,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,12,NO,NO,,,,,,NO,NEVER,,YES
+384,eicu,eicu_crd,vitalperiodic,pasystolic,13,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,13,NO,NO,,,,,,NO,NEVER,,YES
+385,eicu,eicu_crd,vitalperiodic,padiastolic,14,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,14,NO,NO,,,,,,NO,NEVER,,YES
+386,eicu,eicu_crd,vitalperiodic,pamean,15,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,15,NO,NO,,,,,,NO,NEVER,,YES
+387,eicu,eicu_crd,vitalperiodic,st1,16,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,16,NO,NO,,,,,,NO,NEVER,,YES
+388,eicu,eicu_crd,vitalperiodic,st2,17,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,17,NO,NO,,,,,,NO,NEVER,,YES
+389,eicu,eicu_crd,vitalperiodic,st3,18,,YES,double precision,,,53.0,2.0,,,,,,,,,,,,,,eicu,pg_catalog,float8,,,,,18,NO,NO,,,,,,NO,NEVER,,YES
+390,eicu,eicu_crd,vitalperiodic,icp,19,,YES,integer,,,32.0,2.0,0.0,,,,,,,,,,,,,eicu,pg_catalog,int4,,,,,19,NO,NO,,,,,,NO,NEVER,,YES
