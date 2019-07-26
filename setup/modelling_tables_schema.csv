@@ -1,241 +1,357 @@
-table_name,column_name,ordinal_position,data_type,udt_name,time_var,numeric,to_keep
-admissiondx,admissiondxid,1,integer,int4,0,1,1
-admissiondx,patientunitstayid,2,integer,int4,0,1,1
-admissiondx,admitdxenteredoffset,3,integer,int4,1,1,1
-admissiondx,admitdxpath,4,character varying,varchar,0,0,1
-admissiondx,admitdxname,5,character varying,varchar,0,0,0
-admissiondx,admitdxtext,6,character varying,varchar,0,0,0
-apacheapsvar,apacheapsvarid,1,integer,int4,0,1,1
-apacheapsvar,patientunitstayid,2,integer,int4,0,1,1
-apacheapsvar,intubated,3,smallint,int2,0,1,1
-apacheapsvar,vent,4,smallint,int2,0,1,1
-apacheapsvar,dialysis,5,smallint,int2,0,1,1
-apacheapsvar,eyes,6,smallint,int2,0,1,1
-apacheapsvar,motor,7,smallint,int2,0,1,1
-apacheapsvar,verbal,8,smallint,int2,0,1,1
-apacheapsvar,meds,9,smallint,int2,0,1,1
-apacheapsvar,urine,10,double precision,float8,0,1,1
-apacheapsvar,wbc,11,double precision,float8,0,1,1
-apacheapsvar,temperature,12,double precision,float8,0,1,1
-apacheapsvar,respiratoryrate,13,double precision,float8,0,1,1
-apacheapsvar,sodium,14,double precision,float8,0,1,1
-apacheapsvar,heartrate,15,double precision,float8,0,1,1
-apacheapsvar,meanbp,16,double precision,float8,0,1,1
-apacheapsvar,ph,17,double precision,float8,0,1,1
-apacheapsvar,hematocrit,18,double precision,float8,0,1,1
-apacheapsvar,creatinine,19,double precision,float8,0,1,1
-apacheapsvar,albumin,20,double precision,float8,0,1,1
-apacheapsvar,pao2,21,double precision,float8,0,1,1
-apacheapsvar,pco2,22,double precision,float8,0,1,1
-apacheapsvar,bun,23,double precision,float8,0,1,1
-apacheapsvar,glucose,24,double precision,float8,0,1,1
-apacheapsvar,bilirubin,25,double precision,float8,0,1,1
-apacheapsvar,fio2,26,double precision,float8,0,1,1
-apachepatientresult,apachepatientresultsid,1,integer,int4,0,1,1
-apachepatientresult,patientunitstayid,2,integer,int4,0,1,1
-apachepatientresult,physicianspeciality,3,character varying,varchar,0,0,1
-apachepatientresult,physicianinterventioncategory,4,character varying,varchar,0,0,0
-apachepatientresult,acutephysiologyscore,5,integer,int4,0,1,1
-apachepatientresult,apachescore,6,integer,int4,0,1,1
-apachepatientresult,apacheversion,7,character varying,varchar,0,0,1
-apachepatientresult,predictedicumortality,8,character varying,varchar,0,0,1
-apachepatientresult,actualicumortality,9,character varying,varchar,0,0,1
-apachepatientresult,predictediculos,10,double precision,float8,0,1,1
-apachepatientresult,actualiculos,11,double precision,float8,0,1,1
-apachepatientresult,predictedhospitalmortality,12,character varying,varchar,0,0,1
-apachepatientresult,actualhospitalmortality,13,character varying,varchar,0,0,1
-apachepatientresult,predictedhospitallos,14,double precision,float8,0,1,1
-apachepatientresult,actualhospitallos,15,double precision,float8,0,1,1
-apachepatientresult,preopmi,16,integer,int4,0,1,1
-apachepatientresult,preopcardiaccath,17,integer,int4,0,1,1
-apachepatientresult,ptcawithin24h,18,integer,int4,0,1,1
-apachepatientresult,unabridgedunitlos,19,double precision,float8,0,1,1
-apachepatientresult,unabridgedhosplos,20,double precision,float8,0,1,1
-apachepatientresult,actualventdays,21,double precision,float8,0,1,0
-apachepatientresult,predventdays,22,double precision,float8,0,1,0
-apachepatientresult,unabridgedactualventdays,23,double precision,float8,0,1,0
-apachepredvar,apachepredvarid,1,integer,int4,0,1,1
-apachepredvar,patientunitstayid,2,integer,int4,0,1,1
-apachepredvar,sicuday,3,smallint,int2,0,1,1
-apachepredvar,saps3day1,4,smallint,int2,0,1,1
-apachepredvar,saps3today,5,smallint,int2,0,1,1
-apachepredvar,saps3yesterday,6,smallint,int2,0,1,1
-apachepredvar,gender,7,smallint,int2,0,1,1
-apachepredvar,teachtype,8,smallint,int2,0,1,1
-apachepredvar,region,9,smallint,int2,0,1,1
-apachepredvar,bedcount,10,smallint,int2,0,1,1
-apachepredvar,admitsource,11,smallint,int2,0,1,1
-apachepredvar,graftcount,12,smallint,int2,0,1,1
-apachepredvar,meds,13,smallint,int2,0,1,1
-apachepredvar,verbal,14,smallint,int2,0,1,1
-apachepredvar,motor,15,smallint,int2,0,1,1
-apachepredvar,eyes,16,smallint,int2,0,1,1
-apachepredvar,age,17,smallint,int2,0,1,1
-apachepredvar,admitdiagnosis,18,character varying,varchar,0,0,1
-apachepredvar,thrombolytics,19,smallint,int2,0,1,1
-apachepredvar,diedinhospital,20,smallint,int2,0,1,1
-apachepredvar,aids,21,smallint,int2,0,1,1
-apachepredvar,hepaticfailure,22,smallint,int2,0,1,1
-apachepredvar,lymphoma,23,smallint,int2,0,1,1
-apachepredvar,metastaticcancer,24,smallint,int2,0,1,1
-apachepredvar,leukemia,25,smallint,int2,0,1,1
-apachepredvar,immunosuppression,26,smallint,int2,0,1,1
-apachepredvar,cirrhosis,27,smallint,int2,0,1,1
-apachepredvar,electivesurgery,28,smallint,int2,0,1,1
-apachepredvar,activetx,29,smallint,int2,0,1,1
-apachepredvar,readmit,30,smallint,int2,0,1,1
-apachepredvar,ima,31,smallint,int2,0,1,1
-apachepredvar,midur,32,smallint,int2,0,1,1
-apachepredvar,ventday1,33,smallint,int2,0,1,1
-apachepredvar,oobventday1,34,smallint,int2,0,1,1
-apachepredvar,oobintubday1,35,smallint,int2,0,1,1
-apachepredvar,diabetes,36,smallint,int2,0,1,1
-apachepredvar,managementsystem,37,smallint,int2,0,1,1
-apachepredvar,var03hspxlos,38,double precision,float8,0,1,1
-apachepredvar,pao2,39,double precision,float8,0,1,1
-apachepredvar,fio2,40,double precision,float8,0,1,1
-apachepredvar,ejectfx,41,double precision,float8,0,1,1
-apachepredvar,creatinine,42,double precision,float8,0,1,1
-apachepredvar,dischargelocation,43,smallint,int2,0,1,1
-apachepredvar,visitnumber,44,smallint,int2,0,1,1
-apachepredvar,amilocation,45,smallint,int2,0,1,1
-apachepredvar,day1meds,46,smallint,int2,0,1,1
-apachepredvar,day1verbal,47,smallint,int2,0,1,1
-apachepredvar,day1motor,48,smallint,int2,0,1,1
-apachepredvar,day1eyes,49,smallint,int2,0,1,1
-apachepredvar,day1pao2,50,double precision,float8,0,1,1
-apachepredvar,day1fio2,51,double precision,float8,0,1,1
-diagnosis,diagnosisid,1,integer,int4,0,1,1
-diagnosis,patientunitstayid,2,integer,int4,0,1,1
-diagnosis,activeupondischarge,3,character varying,varchar,0,0,1
-diagnosis,diagnosisoffset,4,integer,int4,1,1,1
-diagnosis,diagnosisstring,5,character varying,varchar,0,0,1
-diagnosis,icd9code,6,character varying,varchar,0,0,1
-diagnosis,diagnosispriority,7,character varying,varchar,0,0,1
-hospital,hospitalid,1,integer,int4,0,1,1
-hospital,numbedscategory,2,character varying,varchar,0,0,1
-hospital,teachingstatus,3,boolean,bool,0,1,1
-hospital,region,4,character varying,varchar,0,0,1
-lab,labid,1,integer,int4,0,1,1
-lab,patientunitstayid,2,integer,int4,0,1,1
-lab,labresultoffset,3,integer,int4,1,1,1
-lab,labtypeid,4,numeric,numeric,0,1,1
-lab,labname,5,character varying,varchar,0,0,1
-lab,labresult,6,numeric,numeric,0,1,1
-lab,labresulttext,7,character varying,varchar,0,0,0
-lab,labmeasurenamesystem,8,character varying,varchar,0,0,1
-lab,labmeasurenameinterface,9,character varying,varchar,0,0,0
-lab,labresultrevisedoffset,10,integer,int4,0,1,1
-medication,medicationid,1,integer,int4,0,1,1
-medication,patientunitstayid,2,integer,int4,0,1,1
-medication,drugorderoffset,3,integer,int4,0,1,1
-medication,drugstartoffset,4,integer,int4,1,1,1
-medication,drugivadmixture,5,character varying,varchar,0,0,1
-medication,drugordercancelled,6,character varying,varchar,0,0,1
-medication,drugname,7,character varying,varchar,0,0,1
-medication,drughiclseqno,8,integer,int4,0,1,1
-medication,dosage,9,character varying,varchar,0,0,1
-medication,routeadmin,10,character varying,varchar,0,0,1
-medication,frequency,11,character varying,varchar,0,0,1
-medication,loadingdose,12,character varying,varchar,0,0,0
-medication,prn,13,character varying,varchar,0,0,1
-medication,drugstopoffset,14,integer,int4,0,1,1
-medication,gtc,15,integer,int4,0,1,0
-nurseassessment,nurseassessid,1,integer,int4,0,1,1
-nurseassessment,patientunitstayid,2,integer,int4,0,1,1
-nurseassessment,nurseassessoffset,3,integer,int4,1,1,1
-nurseassessment,nurseassessentryoffset,4,integer,int4,0,1,0
-nurseassessment,cellattributepath,5,character varying,varchar,0,0,1
-nurseassessment,celllabel,6,character varying,varchar,0,0,0
-nurseassessment,cellattribute,7,character varying,varchar,0,0,0
-nurseassessment,cellattributevalue,8,character varying,varchar,0,0,1
-nursecare,nursecareid,1,integer,int4,0,1,1
-nursecare,patientunitstayid,2,integer,int4,0,1,1
-nursecare,celllabel,3,character varying,varchar,0,0,0
-nursecare,nursecareoffset,4,integer,int4,1,1,1
-nursecare,nursecareentryoffset,5,integer,int4,0,1,0
-nursecare,cellattributepath,6,character varying,varchar,0,0,1
-nursecare,cellattribute,7,character varying,varchar,0,0,0
-nursecare,cellattributevalue,8,character varying,varchar,0,0,1
-nursecharting,nursingchartid,1,bigint,int8,0,1,1
-nursecharting,patientunitstayid,2,integer,int4,0,1,1
-nursecharting,nursingchartoffset,3,integer,int4,1,1,1
-nursecharting,nursingchartentryoffset,4,integer,int4,0,1,0
-nursecharting,nursingchartcelltypecat,5,character varying,varchar,0,0,1
-nursecharting,nursingchartcelltypevallabel,6,character varying,varchar,0,0,1
-nursecharting,nursingchartcelltypevalname,7,character varying,varchar,0,0,1
-nursecharting,nursingchartvalue,8,character varying,varchar,0,0,1
-pasthistory,pasthistoryid,1,integer,int4,0,1,1
-pasthistory,patientunitstayid,2,integer,int4,0,1,1
-pasthistory,pasthistoryoffset,3,integer,int4,1,1,1
-pasthistory,pasthistoryenteredoffset,4,integer,int4,0,1,0
-pasthistory,pasthistorynotetype,5,character varying,varchar,0,0,0
-pasthistory,pasthistorypath,6,character varying,varchar,0,0,1
-pasthistory,pasthistoryvalue,7,character varying,varchar,0,0,0
-pasthistory,pasthistoryvaluetext,8,character varying,varchar,0,0,0
-patient,patientunitstayid,1,integer,int4,0,1,1
-patient,patienthealthsystemstayid,2,integer,int4,0,1,1
-patient,gender,3,character varying,varchar,0,0,1
-patient,age,4,character varying,varchar,0,0,1
-patient,ethnicity,5,character varying,varchar,0,0,1
-patient,hospitalid,6,integer,int4,0,1,1
-patient,wardid,7,integer,int4,0,1,1
-patient,apacheadmissiondx,8,character varying,varchar,0,0,1
-patient,admissionheight,9,numeric,numeric,0,1,1
-patient,hospitaladmittime24,10,character varying,varchar,0,0,1
-patient,hospitaladmitoffset,11,integer,int4,0,1,1
-patient,hospitaladmitsource,12,character varying,varchar,0,0,1
-patient,hospitaldischargeyear,13,smallint,int2,0,1,1
-patient,hospitaldischargetime24,14,character varying,varchar,0,0,1
-patient,hospitaldischargeoffset,15,integer,int4,0,1,1
-patient,hospitaldischargelocation,16,character varying,varchar,0,0,1
-patient,hospitaldischargestatus,17,character varying,varchar,0,0,1
-patient,unittype,18,character varying,varchar,0,0,1
-patient,unitadmittime24,19,character varying,varchar,0,0,1
-patient,unitadmitsource,20,character varying,varchar,0,0,1
-patient,unitvisitnumber,21,integer,int4,0,1,1
-patient,unitstaytype,22,character varying,varchar,0,0,1
-patient,admissionweight,23,numeric,numeric,0,1,1
-patient,dischargeweight,24,numeric,numeric,0,1,1
-patient,unitdischargetime24,25,character varying,varchar,0,0,1
-patient,unitdischargeoffset,26,integer,int4,0,1,1
-patient,unitdischargelocation,27,character varying,varchar,0,0,1
-patient,unitdischargestatus,28,character varying,varchar,0,0,1
-patient,uniquepid,29,character varying,varchar,0,0,1
-treatment,treatmentid,1,integer,int4,0,1,1
-treatment,patientunitstayid,2,integer,int4,0,1,1
-treatment,treatmentoffset,3,integer,int4,1,1,1
-treatment,treatmentstring,4,character varying,varchar,0,0,1
-treatment,activeupondischarge,5,character varying,varchar,0,0,1
-vitalaperiodic,vitalaperiodicid,1,integer,int4,0,1,1
-vitalaperiodic,patientunitstayid,2,integer,int4,0,1,1
-vitalaperiodic,observationoffset,3,integer,int4,1,1,1
-vitalaperiodic,noninvasivesystolic,4,double precision,float8,0,1,1
-vitalaperiodic,noninvasivediastolic,5,double precision,float8,0,1,1
-vitalaperiodic,noninvasivemean,6,double precision,float8,0,1,1
-vitalaperiodic,paop,7,double precision,float8,0,1,0
-vitalaperiodic,cardiacoutput,8,double precision,float8,0,1,0
-vitalaperiodic,cardiacinput,9,double precision,float8,0,1,0
-vitalaperiodic,svr,10,double precision,float8,0,1,0
-vitalaperiodic,svri,11,double precision,float8,0,1,0
-vitalaperiodic,pvr,12,double precision,float8,0,1,0
-vitalaperiodic,pvri,13,double precision,float8,0,1,0
-vitalperiodic,vitalperiodicid,1,bigint,int8,0,1,1
-vitalperiodic,patientunitstayid,2,integer,int4,0,1,1
-vitalperiodic,observationoffset,3,integer,int4,1,1,1
-vitalperiodic,temperature,4,numeric,numeric,0,1,0
-vitalperiodic,sao2,5,integer,int4,0,1,1
-vitalperiodic,heartrate,6,integer,int4,0,1,1
-vitalperiodic,respiration,7,integer,int4,0,1,1
-vitalperiodic,cvp,8,integer,int4,0,1,0
-vitalperiodic,etco2,9,integer,int4,0,1,0
-vitalperiodic,systemicsystolic,10,integer,int4,0,1,0
-vitalperiodic,systemicdiastolic,11,integer,int4,0,1,0
-vitalperiodic,systemicmean,12,integer,int4,0,1,0
-vitalperiodic,pasystolic,13,integer,int4,0,1,0
-vitalperiodic,padiastolic,14,integer,int4,0,1,0
-vitalperiodic,pamean,15,integer,int4,0,1,0
-vitalperiodic,st1,16,double precision,float8,0,1,1
-vitalperiodic,st2,17,double precision,float8,0,1,1
-vitalperiodic,st3,18,double precision,float8,0,1,1
-vitalperiodic,icp,19,integer,int4,0,1,0
+table_name,column_name,ordinal_position,data_type,udt_name,completeness
+admissiondx,admissiondxid,1,integer,int4,100.0
+admissiondx,patientunitstayid,2,integer,int4,100.0
+admissiondx,admitdxenteredoffset,3,integer,int4,100.0
+admissiondx,admitdxpath,4,character varying,varchar,100.0
+admissiondx,admitdxname,5,character varying,varchar,100.0
+admissiondx,admitdxtext,6,character varying,varchar,100.0
+apacheapsvar,apacheapsvarid,1,integer,int4,100.0
+apacheapsvar,patientunitstayid,2,integer,int4,100.0
+apacheapsvar,intubated,3,smallint,int2,100.0
+apacheapsvar,vent,4,smallint,int2,100.0
+apacheapsvar,dialysis,5,smallint,int2,100.0
+apacheapsvar,eyes,6,smallint,int2,100.0
+apacheapsvar,motor,7,smallint,int2,100.0
+apacheapsvar,verbal,8,smallint,int2,100.0
+apacheapsvar,meds,9,smallint,int2,100.0
+apacheapsvar,urine,10,double precision,float8,100.0
+apacheapsvar,wbc,11,double precision,float8,100.0
+apacheapsvar,temperature,12,double precision,float8,100.0
+apacheapsvar,respiratoryrate,13,double precision,float8,100.0
+apacheapsvar,sodium,14,double precision,float8,100.0
+apacheapsvar,heartrate,15,double precision,float8,100.0
+apacheapsvar,meanbp,16,double precision,float8,100.0
+apacheapsvar,ph,17,double precision,float8,100.0
+apacheapsvar,hematocrit,18,double precision,float8,100.0
+apacheapsvar,creatinine,19,double precision,float8,100.0
+apacheapsvar,albumin,20,double precision,float8,100.0
+apacheapsvar,pao2,21,double precision,float8,100.0
+apacheapsvar,pco2,22,double precision,float8,100.0
+apacheapsvar,bun,23,double precision,float8,100.0
+apacheapsvar,glucose,24,double precision,float8,100.0
+apacheapsvar,bilirubin,25,double precision,float8,100.0
+apacheapsvar,fio2,26,double precision,float8,100.0
+apachepatientresult,apachepatientresultsid,1,integer,int4,100.0
+apachepatientresult,patientunitstayid,2,integer,int4,100.0
+apachepatientresult,physicianspeciality,3,character varying,varchar,100.0
+apachepatientresult,physicianinterventioncategory,4,character varying,varchar,100.0
+apachepatientresult,acutephysiologyscore,5,integer,int4,100.0
+apachepatientresult,apachescore,6,integer,int4,100.0
+apachepatientresult,apacheversion,7,character varying,varchar,100.0
+apachepatientresult,predictedicumortality,8,character varying,varchar,100.0
+apachepatientresult,actualicumortality,9,character varying,varchar,100.0
+apachepatientresult,predictediculos,10,double precision,float8,100.0
+apachepatientresult,actualiculos,11,double precision,float8,100.0
+apachepatientresult,predictedhospitalmortality,12,character varying,varchar,100.0
+apachepatientresult,actualhospitalmortality,13,character varying,varchar,100.0
+apachepatientresult,predictedhospitallos,14,double precision,float8,100.0
+apachepatientresult,actualhospitallos,15,double precision,float8,100.0
+apachepatientresult,preopmi,16,integer,int4,100.0
+apachepatientresult,preopcardiaccath,17,integer,int4,100.0
+apachepatientresult,ptcawithin24h,18,integer,int4,100.0
+apachepatientresult,unabridgedunitlos,19,double precision,float8,100.0
+apachepatientresult,unabridgedhosplos,20,double precision,float8,100.0
+apachepatientresult,actualventdays,21,double precision,float8,33.602859989766515
+apachepatientresult,predventdays,22,double precision,float8,32.92017881668597
+apachepatientresult,unabridgedactualventdays,23,double precision,float8,33.602859989766515
+apachepredvar,apachepredvarid,1,integer,int4,100.0
+apachepredvar,patientunitstayid,2,integer,int4,100.0
+apachepredvar,sicuday,3,smallint,int2,100.0
+apachepredvar,saps3day1,4,smallint,int2,100.0
+apachepredvar,saps3today,5,smallint,int2,100.0
+apachepredvar,saps3yesterday,6,smallint,int2,100.0
+apachepredvar,gender,7,smallint,int2,100.0
+apachepredvar,teachtype,8,smallint,int2,100.0
+apachepredvar,region,9,smallint,int2,100.0
+apachepredvar,bedcount,10,smallint,int2,100.0
+apachepredvar,admitsource,11,smallint,int2,100.0
+apachepredvar,graftcount,12,smallint,int2,100.0
+apachepredvar,meds,13,smallint,int2,100.0
+apachepredvar,verbal,14,smallint,int2,100.0
+apachepredvar,motor,15,smallint,int2,100.0
+apachepredvar,eyes,16,smallint,int2,100.0
+apachepredvar,age,17,smallint,int2,96.44578418829633
+apachepredvar,admitdiagnosis,18,character varying,varchar,100.0
+apachepredvar,thrombolytics,19,smallint,int2,100.0
+apachepredvar,diedinhospital,20,smallint,int2,100.0
+apachepredvar,aids,21,smallint,int2,100.0
+apachepredvar,hepaticfailure,22,smallint,int2,100.0
+apachepredvar,lymphoma,23,smallint,int2,100.0
+apachepredvar,metastaticcancer,24,smallint,int2,100.0
+apachepredvar,leukemia,25,smallint,int2,100.0
+apachepredvar,immunosuppression,26,smallint,int2,100.0
+apachepredvar,cirrhosis,27,smallint,int2,100.0
+apachepredvar,electivesurgery,28,smallint,int2,19.427843693954213
+apachepredvar,activetx,29,smallint,int2,100.0
+apachepredvar,readmit,30,smallint,int2,100.0
+apachepredvar,ima,31,smallint,int2,100.0
+apachepredvar,midur,32,smallint,int2,100.0
+apachepredvar,ventday1,33,smallint,int2,100.0
+apachepredvar,oobventday1,34,smallint,int2,100.0
+apachepredvar,oobintubday1,35,smallint,int2,100.0
+apachepredvar,diabetes,36,smallint,int2,100.0
+apachepredvar,managementsystem,37,smallint,int2,100.0
+apachepredvar,var03hspxlos,38,double precision,float8,100.0
+apachepredvar,pao2,39,double precision,float8,100.0
+apachepredvar,fio2,40,double precision,float8,100.0
+apachepredvar,ejectfx,41,double precision,float8,100.0
+apachepredvar,creatinine,42,double precision,float8,100.0
+apachepredvar,dischargelocation,43,smallint,int2,100.0
+apachepredvar,visitnumber,44,smallint,int2,100.0
+apachepredvar,amilocation,45,smallint,int2,100.0
+apachepredvar,day1meds,46,smallint,int2,100.0
+apachepredvar,day1verbal,47,smallint,int2,100.0
+apachepredvar,day1motor,48,smallint,int2,100.0
+apachepredvar,day1eyes,49,smallint,int2,100.0
+apachepredvar,day1pao2,50,double precision,float8,100.0
+apachepredvar,day1fio2,51,double precision,float8,100.0
+diagnosis,diagnosisid,1,integer,int4,100.0
+diagnosis,patientunitstayid,2,integer,int4,100.0
+diagnosis,activeupondischarge,3,character varying,varchar,100.0
+diagnosis,diagnosisoffset,4,integer,int4,100.0
+diagnosis,diagnosisstring,5,character varying,varchar,100.0
+diagnosis,icd9code,6,character varying,varchar,100.0
+diagnosis,diagnosispriority,7,character varying,varchar,100.0
+hospital,hospitalid,1,integer,int4,100.0
+hospital,numbedscategory,2,character varying,varchar,79.8076923076923
+hospital,teachingstatus,3,boolean,bool,100.0
+hospital,region,4,character varying,varchar,87.5
+lab,labid,1,integer,int4,100.0
+lab,patientunitstayid,2,integer,int4,100.0
+lab,labresultoffset,3,integer,int4,100.0
+lab,labtypeid,4,numeric,numeric,100.0
+lab,labname,5,character varying,varchar,100.0
+lab,labresult,6,numeric,numeric,99.41348541958607
+lab,labresulttext,7,character varying,varchar,100.0
+lab,labmeasurenamesystem,8,character varying,varchar,100.0
+lab,labmeasurenameinterface,9,character varying,varchar,100.0
+lab,labresultrevisedoffset,10,integer,int4,100.0
+medication,medicationid,1,integer,int4,100.0
+medication,patientunitstayid,2,integer,int4,100.0
+medication,drugorderoffset,3,integer,int4,100.0
+medication,drugstartoffset,4,integer,int4,100.0
+medication,drugivadmixture,5,character varying,varchar,100.0
+medication,drugordercancelled,6,character varying,varchar,100.0
+medication,drugname,7,character varying,varchar,64.31585242814393
+medication,drughiclseqno,8,integer,int4,93.27514536378642
+medication,dosage,9,character varying,varchar,91.90876617209358
+medication,routeadmin,10,character varying,varchar,99.9914953094783
+medication,frequency,11,character varying,varchar,90.47504790907185
+medication,loadingdose,12,character varying,varchar,100.0
+medication,prn,13,character varying,varchar,100.0
+medication,drugstopoffset,14,integer,int4,100.0
+medication,gtc,15,integer,int4,100.0
+nurseassessment,nurseassessid,1,integer,int4,100.0
+nurseassessment,patientunitstayid,2,integer,int4,100.0
+nurseassessment,nurseassessoffset,3,integer,int4,100.0
+nurseassessment,nurseassessentryoffset,4,integer,int4,100.0
+nurseassessment,cellattributepath,5,character varying,varchar,100.0
+nurseassessment,celllabel,6,character varying,varchar,100.0
+nurseassessment,cellattribute,7,character varying,varchar,100.0
+nurseassessment,cellattributevalue,8,character varying,varchar,100.0
+nursecare,nursecareid,1,integer,int4,100.0
+nursecare,patientunitstayid,2,integer,int4,100.0
+nursecare,celllabel,3,character varying,varchar,100.0
+nursecare,nursecareoffset,4,integer,int4,100.0
+nursecare,nursecareentryoffset,5,integer,int4,100.0
+nursecare,cellattributepath,6,character varying,varchar,100.0
+nursecare,cellattribute,7,character varying,varchar,100.0
+nursecare,cellattributevalue,8,character varying,varchar,100.0
+nursecharting,nursingchartid,1,bigint,int8,100.0
+nursecharting,patientunitstayid,2,integer,int4,100.0
+nursecharting,nursingchartoffset,3,integer,int4,100.0
+nursecharting,nursingchartentryoffset,4,integer,int4,100.0
+nursecharting,nursingchartcelltypecat,5,character varying,varchar,100.0
+nursecharting,nursingchartcelltypevallabel,6,character varying,varchar,100.0
+nursecharting,nursingchartcelltypevalname,7,character varying,varchar,100.0
+nursecharting,nursingchartvalue,8,character varying,varchar,100.0
+pasthistory,pasthistoryid,1,integer,int4,100.0
+pasthistory,patientunitstayid,2,integer,int4,100.0
+pasthistory,pasthistoryoffset,3,integer,int4,100.0
+pasthistory,pasthistoryenteredoffset,4,integer,int4,100.0
+pasthistory,pasthistorynotetype,5,character varying,varchar,100.0
+pasthistory,pasthistorypath,6,character varying,varchar,100.0
+pasthistory,pasthistoryvalue,7,character varying,varchar,100.0
+pasthistory,pasthistoryvaluetext,8,character varying,varchar,100.0
+patient,patientunitstayid,1,integer,int4,100.0
+patient,patienthealthsystemstayid,2,integer,int4,100.0
+patient,gender,3,character varying,varchar,100.0
+patient,age,4,character varying,varchar,100.0
+patient,ethnicity,5,character varying,varchar,100.0
+patient,hospitalid,6,integer,int4,100.0
+patient,wardid,7,integer,int4,100.0
+patient,apacheadmissiondx,8,character varying,varchar,100.0
+patient,admissionheight,9,numeric,numeric,97.90151300165788
+patient,hospitaladmittime24,10,character varying,varchar,100.0
+patient,hospitaladmitoffset,11,integer,int4,100.0
+patient,hospitaladmitsource,12,character varying,varchar,100.0
+patient,hospitaldischargeyear,13,smallint,int2,100.0
+patient,hospitaldischargetime24,14,character varying,varchar,100.0
+patient,hospitaldischargeoffset,15,integer,int4,100.0
+patient,hospitaldischargelocation,16,character varying,varchar,100.0
+patient,hospitaldischargestatus,17,character varying,varchar,100.0
+patient,unittype,18,character varying,varchar,100.0
+patient,unitadmittime24,19,character varying,varchar,100.0
+patient,unitadmitsource,20,character varying,varchar,100.0
+patient,unitvisitnumber,21,integer,int4,100.0
+patient,unitstaytype,22,character varying,varchar,100.0
+patient,admissionweight,23,numeric,numeric,91.67674836576903
+patient,dischargeweight,24,numeric,numeric,54.72595203600536
+patient,unitdischargetime24,25,character varying,varchar,100.0
+patient,unitdischargeoffset,26,integer,int4,100.0
+patient,unitdischargelocation,27,character varying,varchar,100.0
+patient,unitdischargestatus,28,character varying,varchar,100.0
+patient,uniquepid,29,character varying,varchar,100.0
+treatment,treatmentid,1,integer,int4,100.0
+treatment,patientunitstayid,2,integer,int4,100.0
+treatment,treatmentoffset,3,integer,int4,100.0
+treatment,treatmentstring,4,character varying,varchar,100.0
+treatment,activeupondischarge,5,character varying,varchar,100.0
+vitalaperiodic,vitalaperiodicid,1,integer,int4,100.0
+vitalaperiodic,patientunitstayid,2,integer,int4,100.0
+vitalaperiodic,observationoffset,3,integer,int4,100.0
+vitalaperiodic,noninvasivesystolic,4,double precision,float8,88.05331541593856
+vitalaperiodic,noninvasivediastolic,5,double precision,float8,88.06382385950286
+vitalaperiodic,noninvasivemean,6,double precision,float8,88.56955716262293
+vitalaperiodic,paop,7,double precision,float8,0.1420773474088252
+vitalaperiodic,cardiacoutput,8,double precision,float8,5.161081478762536
+vitalaperiodic,cardiacinput,9,double precision,float8,1.0388882601104188
+vitalaperiodic,svr,10,double precision,float8,6.77599196716229
+vitalaperiodic,svri,11,double precision,float8,1.0306490022721368
+vitalaperiodic,pvr,12,double precision,float8,0.07619518889555421
+vitalaperiodic,pvri,13,double precision,float8,0.07572859007315393
+vitalperiodic,vitalperiodicid,1,bigint,int8,100.0
+vitalperiodic,patientunitstayid,2,integer,int4,100.0
+vitalperiodic,observationoffset,3,integer,int4,100.0
+vitalperiodic,temperature,4,numeric,numeric,9.00193712974182
+vitalperiodic,sao2,5,integer,int4,90.61619832414503
+vitalperiodic,heartrate,6,integer,int4,99.52830145584652
+vitalperiodic,respiration,7,integer,int4,87.61136798345791
+vitalperiodic,cvp,8,integer,int4,13.061664639985418
+vitalperiodic,etco2,9,integer,int4,3.0158065592529466
+vitalperiodic,systemicsystolic,10,integer,int4,18.97773804154998
+vitalperiodic,systemicdiastolic,11,integer,int4,18.976979203655468
+vitalperiodic,systemicmean,12,integer,int4,19.13176236207951
+vitalperiodic,pasystolic,13,integer,int4,2.809771503069421
+vitalperiodic,padiastolic,14,integer,int4,2.8094292419525786
+vitalperiodic,pamean,15,integer,int4,2.8295394688497453
+vitalperiodic,st1,16,double precision,float8,38.59295241270974
+vitalperiodic,st2,17,double precision,float8,40.873117790554225
+vitalperiodic,st3,18,double precision,float8,37.635931695644345
+vitalperiodic,icp,19,integer,int4,1.7939575531580945
+pivoted_bg,patientunitstayid,1,integer,int4,100.0
+pivoted_bg,chartoffset,2,integer,int4,100.0
+pivoted_bg,fio2,3,numeric,numeric,22.72754594907692
+pivoted_bg,pao2,4,numeric,numeric,28.302363641828073
+pivoted_bg,paco2,5,numeric,numeric,28.081258896785
+pivoted_bg,ph,6,numeric,numeric,27.976273418523892
+pivoted_bg,aniongap,7,numeric,numeric,69.61090482864894
+pivoted_bg,basedeficit,8,numeric,numeric,4.485140832178971
+pivoted_bg,baseexcess,9,numeric,numeric,22.2880686770327
+pivoted_bg,peep,10,numeric,numeric,7.655333426228747
+pivoted_infusion,patientunitstayid,1,integer,int4,100.0
+pivoted_infusion,chartoffset,2,integer,int4,100.0
+pivoted_infusion,dopamine,3,smallint,int2,8.433957421191904
+pivoted_infusion,dobutamine,4,smallint,int2,5.91095345285733
+pivoted_infusion,norepinephrine,5,smallint,int2,100.0
+pivoted_infusion,phenylephrine,6,smallint,int2,100.0
+pivoted_infusion,epinephrine,7,smallint,int2,100.0
+pivoted_infusion,vasopressin,8,smallint,int2,100.0
+pivoted_infusion,milrinone,9,smallint,int2,100.0
+pivoted_infusion,heparin,10,smallint,int2,100.0
+pivoted_lab,patientunitstayid,1,integer,int4,100.0
+pivoted_lab,chartoffset,2,integer,int4,100.0
+pivoted_lab,albumin,3,numeric,numeric,9.404284362372776
+pivoted_lab,bilirubin,4,numeric,numeric,7.899494238321256
+pivoted_lab,bun,5,numeric,numeric,23.774374252351688
+pivoted_lab,calcium,6,numeric,numeric,22.98757113773138
+pivoted_lab,chloride,7,numeric,numeric,24.045893962981566
+pivoted_lab,creatinine,8,numeric,numeric,23.899398644716015
+pivoted_lab,glucose,9,numeric,numeric,84.05479846967434
+pivoted_lab,bicarbonate,10,numeric,numeric,22.45341364199781
+pivoted_lab,totalco2,11,numeric,numeric,3.428159806163266
+pivoted_lab,hematocrit,12,numeric,numeric,23.989553952334546
+pivoted_lab,hemoglobin,13,numeric,numeric,24.310507600162058
+pivoted_lab,inr,14,numeric,numeric,7.541469842005222
+pivoted_lab,lactate,15,numeric,numeric,3.838252609112667
+pivoted_lab,platelets,16,numeric,numeric,21.38148566387595
+pivoted_lab,potassium,17,numeric,numeric,27.879329256554605
+pivoted_lab,ptt,18,numeric,numeric,5.277519714769758
+pivoted_lab,sodium,19,numeric,numeric,26.032227464607313
+pivoted_lab,wbc,20,numeric,numeric,21.30489787385144
+pivoted_lab,bands,21,numeric,numeric,1.424062453485149
+pivoted_lab,alt,22,numeric,numeric,8.079296777309992
+pivoted_lab,ast,23,numeric,numeric,8.18804391208926
+pivoted_lab,alp,24,numeric,numeric,8.059575891819652
+pivoted_med,patientunitstayid,1,integer,int4,100.0
+pivoted_med,drugorderoffset,2,integer,int4,99.3715752612792
+pivoted_med,chartoffset,3,integer,int4,100.0
+pivoted_med,drugstopoffset,4,integer,int4,98.42536766804744
+pivoted_med,norepinephrine,5,smallint,int2,100.0
+pivoted_med,epinephrine,6,smallint,int2,100.0
+pivoted_med,dopamine,7,smallint,int2,100.0
+pivoted_med,dobutamine,8,smallint,int2,100.0
+pivoted_med,phenylephrine,9,smallint,int2,100.0
+pivoted_med,vasopressin,10,smallint,int2,100.0
+pivoted_med,milrinone,11,smallint,int2,100.0
+pivoted_med,heparin,12,smallint,int2,100.0
+pivoted_med,warfarin,13,smallint,int2,100.0
+pivoted_o2,patientunitstayid,1,integer,int4,100.0
+pivoted_o2,chartoffset,2,integer,int4,100.0
+pivoted_o2,entryoffset,3,integer,int4,100.0
+pivoted_o2,o2_flow,4,numeric,numeric,64.22535976949901
+pivoted_o2,o2_device,5,text,text,41.95362798319393
+pivoted_o2,etco2,6,numeric,numeric,6.124171281087476
+pivoted_vital_other,patientunitstayid,1,integer,int4,100.0
+pivoted_vital_other,chartoffset,2,integer,int4,100.0
+pivoted_vital_other,entryoffset,3,integer,int4,100.0
+pivoted_vital_other,pasystolic,4,numeric,numeric,100.0
+pivoted_vital_other,padiastolic,5,numeric,numeric,100.0
+pivoted_vital_other,pamean,6,numeric,numeric,100.0
+pivoted_vital_other,sv,7,numeric,numeric,100.0
+pivoted_vital_other,co,8,numeric,numeric,83.45591660433566
+pivoted_vital_other,svr,9,numeric,numeric,76.84500910153218
+pivoted_vital_other,icp,10,numeric,numeric,69.68693543216783
+pivoted_vital_other,ci,11,numeric,numeric,65.39270249910923
+pivoted_vital_other,svri,12,numeric,numeric,65.37376077895578
+pivoted_vital_other,cpp,13,numeric,numeric,54.78485438118898
+pivoted_vital_other,svo2,14,numeric,numeric,29.66955468087218
+pivoted_vital_other,paop,15,numeric,numeric,19.07702630299071
+pivoted_vital_other,pvr,16,numeric,numeric,15.828927699953265
+pivoted_vital_other,pvri,17,numeric,numeric,15.822249377038434
+pivoted_vital_other,iap,18,numeric,numeric,18.527725925049918
+pivoted_uo,patientunitstayid,1,integer,int4,100.0
+pivoted_uo,chartoffset,2,integer,int4,100.0
+pivoted_uo,outputtotal,3,numeric,numeric,100.0
+pivoted_uo,urineoutput,4,numeric,numeric,15.899326752341375
+pivoted_vital,patientunitstayid,1,integer,int4,15.919004136935856
+pivoted_vital,chartoffset,2,integer,int4,16.02160764232137
+pivoted_vital,entryoffset,3,integer,int4,7.227222256058995
+pivoted_vital,heartrate,4,numeric,numeric,4.214239867318207
+pivoted_vital,respiratoryrate,5,numeric,numeric,2.0586292359084157
+pivoted_vital,spo2,6,numeric,numeric,78.62052163809541
+pivoted_vital,nibp_systolic,7,numeric,numeric,3.8267827944697177
+pivoted_vital,nibp_diastolic,8,numeric,numeric,0.11103667021171928
+pivoted_vital,nibp_mean,9,numeric,numeric,41.12667082078119
+pivoted_vital,temperature,10,numeric,numeric,3.562543629915247
+pivoted_vital,temperaturelocation,11,text,text,0.28157400336389576
+pivoted_vital,ibp_systolic,12,numeric,numeric,0.22535290452251888
+pivoted_vital,ibp_diastolic,13,numeric,numeric,0.2183252671673468
+pivoted_vital,ibp_mean,14,numeric,numeric,0.2553374905712532
+pivoted_score,patientunitstayid,1,integer,int4,100.0
+pivoted_score,chartoffset,2,integer,int4,100.0
+pivoted_score,entryoffset,3,integer,int4,100.0
+pivoted_score,gcs,4,numeric,numeric,59.90329051830944
+pivoted_score,gcs_motor,5,numeric,numeric,53.97947134672043
+pivoted_score,gcs_verbal,6,numeric,numeric,53.49681715851577
+pivoted_score,gcs_eyes,7,numeric,numeric,53.09206578724755
+pivoted_score,gcs_unable,8,integer,int4,1.3759795210868284
+pivoted_score,gcs_intub,9,integer,int4,0.06030112381118515
+pivoted_score,fall_risk,10,numeric,numeric,1.4787523919912822
+pivoted_score,delirium_scale,11,text,text,5.039548640045901
+pivoted_score,delirium_score,12,numeric,numeric,4.502758299154523
+pivoted_score,sedation_scale,13,text,text,25.768108113977707
+pivoted_score,sedation_score,14,numeric,numeric,25.406494026458233
+pivoted_score,sedation_goal,15,numeric,numeric,9.80237414439133
+pivoted_score,pain_score,16,numeric,numeric,42.21789740156976
+pivoted_score,pain_goal,17,numeric,numeric,15.495199554160497
