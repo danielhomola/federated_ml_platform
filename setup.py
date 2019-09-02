@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-    Setup file for proto.
+    Setup file for neoglia.
     Use setup.cfg to configure your project.
 
     This file was generated with PyScaffold 3.2.1.
