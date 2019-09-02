@@ -5,25 +5,30 @@ import syft as sy
 from syft.workers import WebsocketClientWorker
 
 from neoglia.etl.config import Hospitals as H
+from neoglia.etl.config import LocalHospitals as LH
 
 logger = logging.getLogger(__name__)
 
 
-def connect():
+def connect(local=False):
     """
     Connects to the three hospitals on AWS and returns their WebsocketClientWorkers.
-
+    Args:
+        local (bool): Set to true for testing and start_local_workers.py will provide
+            three test workers locally.
     Returns:
         tuple(class:`syft.workers.WebsocketClientWorker`): tuple of 3 connected workers.
 
     """
     hook = sy.TorchHook(torch)
+    if local:
+        H = LH
 
     h1 = WebsocketClientWorker(id=H.h1_name, port=H.h1_port, host=H.h1_host, hook=hook)
     logger.info("Connected to worker h1.")
     h1 = add_datasets(h1)
     h1.dataset_sizes = {
-        "mnist_train": 12000,
+        "mnist_train": 24754,
         "mnist_test": 10000,
         "eicu_class_train": 4778,
         "eicu_class_test": 5421,
@@ -35,7 +40,7 @@ def connect():
     logger.info("Connected to worker h2.")
     h2 = add_datasets(h2)
     h2.dataset_sizes = {
-        "mnist_train": 12000,
+        "mnist_train": 17181,
         "mnist_test": 10000,
         "eicu_class_train": 3981,
         "eicu_class_test": 5421,
@@ -47,7 +52,7 @@ def connect():
     logger.info("Connected to worker h3.")
     h3 = add_datasets(h3)
     h3.dataset_sizes = {
-        "mnist_train": 12000,
+        "mnist_train": 18065,
         "mnist_test": 10000,
         "eicu_class_train": 2387,
         "eicu_class_test": 5421,

@@ -39,3 +39,20 @@ class Hospitals(object):
     h3_name = "h3"
     h3_host = "ec2-3-9-230-244.eu-west-2.compute.amazonaws.com"
     h3_port = 8777
+
+
+class LocalHospitals(object):
+    """
+    Info to connect to our AWS EC2 with websocket server running on them.
+    """
+    h1_name = "h1"
+    h1_host = "localhost"
+    h1_port = 8777
+
+    h2_name = "h2"
+    h2_host = "localhost"
+    h2_port = 8778
+
+    h3_name = "h3"
+    h3_host = "localhost"
+    h3_port = 8779

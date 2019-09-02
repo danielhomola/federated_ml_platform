@@ -1,2 +1,2 @@
 train_dataset_name: mnist_train
-test_dataset_name: test_train
+test_dataset_name: mnist_test

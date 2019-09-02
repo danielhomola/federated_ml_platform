@@ -47,8 +47,8 @@ class Learner(object):
 
     def serialize_model_send_to_device(self):
         """
-        Serializes the model based on the datasets input dimensions and sends it to the
-        GPU or CPU.
+        Serializes the model based on the datasets input dimensions and sends it
+        to the GPU or CPU.
         """
         # send to device
         use_cuda = self.config.cuda and torch.cuda.is_available()
@@ -57,13 +57,12 @@ class Learner(object):
 
         # serialize model
         if 'mnist' in self.config.train_dataset_name:
-            model_dim = [1, 1, 28, 28]
+            dummy_input = torch.zeros([1, 1, 28, 28], dtype=torch.float)
+            self.model = torch.jit.trace(self.model, dummy_input)
         else:
-            model_dim = [1, 103]
-        self.model = torch.jit.trace(
-            self.model,
-            torch.zeros(model_dim, dtype=torch.float)
-        )
+            dummy_input = torch.zeros([1, 103], dtype=torch.float)
+            self.model.eval()
+            self.model = torch.jit.trace(self.model, dummy_input)
 
     def train_eval(self):
         """

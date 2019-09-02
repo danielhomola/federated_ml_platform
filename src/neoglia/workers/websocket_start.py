@@ -70,8 +70,8 @@ def get_eicu_dataset(hospitalid, outcome):
     y = pd.read_csv('y.csv')[outcome].values
 
     return sy.BaseDataset(
-        data=torch.from_numpy(x),
-        targets=torch.from_numpy(y)
+        data=torch.from_numpy(x.astype('float32')),
+        targets=torch.from_numpy(y.astype('float32'))
     )
 
 
