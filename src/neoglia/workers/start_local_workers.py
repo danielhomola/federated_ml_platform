@@ -12,9 +12,24 @@ mnist_trainset = datasets.MNIST(
     ),
 )
 
-call_h1= ["python", "websocket_start.py", "--port", "8777", "--id", "h1", "--host", "localhost"]
-call_h2= ["python", "websocket_start.py", "--port", "8778", "--id", "h2", "--host", "localhost"]
-call_h3= ["python", "websocket_start.py", "--port", "8779", "--id", "h3", "--host", "localhost"]
+call_h1 = [
+    "python", "websocket_start.py",
+    "--port", "8777",
+    "--id", "h1",
+    "--host", "localhost"
+]
+call_h2 = [
+    "python", "websocket_start.py",
+    "--port", "8778",
+    "--id", "h2",
+    "--host", "localhost"
+]
+call_h3 = [
+    "python", "websocket_start.py",
+    "--port", "8779",
+    "--id", "h3",
+    "--host", "localhost"
+]
 
 subprocess.Popen(call_h1)
 subprocess.Popen(call_h2)

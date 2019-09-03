@@ -27,6 +27,7 @@ class LearnConfig(DotDict, dict):
             test_batch_size=128,
             train_epochs=40,
             fed_after_n_batches=10,
+            metrics=["accuracy"],
             lr=0.1,
             cuda=False,
             seed=42,
@@ -47,6 +48,8 @@ class LearnConfig(DotDict, dict):
                 remote workers.
             fed_after_n_batches (int): Number of training epochs performed on each
                 remote worker before averaging global model.
+            metrics (tuple<str>): Metrics to use for evaluation of the model. Use any
+                of: accuracy, precision, recall, mse, mae.
             lr (float): Learning rate for the optimizer.
             cuda (bool): Whether the remote workers have GPUs and CUDA enabled.
             seed (int): Seed for reproducibility.
@@ -63,11 +66,22 @@ class LearnConfig(DotDict, dict):
         self.__setitem__('test_batch_size', test_batch_size)
         self.__setitem__('train_epochs', train_epochs)
         self.__setitem__('fed_after_n_batches', fed_after_n_batches)
+        self.__setitem__('metrics', metrics)
         self.__setitem__('lr', lr)
         self.__setitem__('cuda', cuda)
         self.__setitem__('seed', seed)
         self.__setitem__('save_model', save_model)
         self.__setitem__('verbose', verbose)
+
+        # set class-reg variable
+        self.__setitem__('regression', False)
+
+        # check that we don't have incompatible metrics
+        if "mse" in self.metrics or "mae" in self.metrics:
+            error = "%s cannot be used with mse and mae!"
+            for metric in ["accuracy", "precision", "recall"]:
+                assert metric not in self.metrics, error % metric
+            self.__setitem__('regression', True)
 
         # if there was a config file provided, override the params that are define in it
         if config_file is not None:

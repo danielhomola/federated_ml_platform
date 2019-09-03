@@ -67,7 +67,7 @@ def get_eicu_dataset(hospitalid, outcome):
     x = scaler.fit_transform(df_x.values)
 
     # load and select outcome
-    y = pd.read_csv('y.csv')[outcome].values
+    y = pd.read_csv('y.csv')[outcome][to_keep].values
 
     return sy.BaseDataset(
         data=torch.from_numpy(x.astype('float32')),

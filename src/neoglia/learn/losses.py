@@ -23,3 +23,11 @@ def binary_cross_entropy(pred, target):
     """
     return F.binary_cross_entropy(input=pred, target=target)
 
+
+@torch.jit.script
+def mse(pred, target):
+    """
+    Compiled loss function for univariate regression problems.
+    Expects tensor of predicted values and same shaped tensor with true values.
+    """
+    return F.mse_loss(input=pred, target=target)

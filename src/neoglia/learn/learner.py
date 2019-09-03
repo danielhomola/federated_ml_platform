@@ -21,19 +21,21 @@ class Learner(object):
     """
     Federated learner object.
     """
-    def __init__(self, config, model, loss_fn, workers):
+    def __init__(self, config, model, model_input_dim, loss_fn, workers):
         """
         Constructor of the Learner.
 
         Args:
             config (:class:`neoglia.learn.config.LearnConfig`): LearnConfig object.
             model (:class:`torch.nn.Module`): Neural network defined in Torch.
+            model_input_dim (list<int>): Shape of input data to model.
             loss_fn (:class:`torch.jit.ScriptModule`): Loss function as TorchScript.
             workers (tuple(class:`syft.workers.WebsocketClientWorker`): Collection of
                 workers whose data to train on.
         """
         self.config = config
         self.model = model
+        self.model_input_dim = model_input_dim
         self.loss_fn = loss_fn
         self.workers = workers
         self.loop = asyncio.get_event_loop()
@@ -56,13 +58,9 @@ class Learner(object):
         self.model.to(device)
 
         # serialize model
-        if 'mnist' in self.config.train_dataset_name:
-            dummy_input = torch.zeros([1, 1, 28, 28], dtype=torch.float)
-            self.model = torch.jit.trace(self.model, dummy_input)
-        else:
-            dummy_input = torch.zeros([1, 103], dtype=torch.float)
-            self.model.eval()
-            self.model = torch.jit.trace(self.model, dummy_input)
+        dummy_input = torch.zeros(self.model_input_dim, dtype=torch.float)
+        self.model.eval()
+        self.model = torch.jit.trace(self.model, dummy_input)
 
     def train_eval(self):
         """
@@ -78,14 +76,14 @@ class Learner(object):
         This is the actual main train eval function, but this is not exposed to
         the user.
         """
-        for curr_epoch in range(self.config.train_epochs):
+        for curr_epoch in range(1, self.config.train_epochs + 1):
 
             # --------------------------------------------------------------------------
             # TRAIN
             # --------------------------------------------------------------------------
 
             logger.info(
-                "Starting epoch %d/%d" % (curr_epoch + 1, self.config.train_epochs + 1)
+                "Starting epoch %d/%d" % (curr_epoch, self.config.train_epochs)
             )
             results = await asyncio.gather(
                 *[
@@ -98,8 +96,7 @@ class Learner(object):
             # EVAL
             # --------------------------------------------------------------------------
 
-            test_now = (curr_epoch % self.config.fed_after_n_batches == 0 and
-                        curr_epoch > 0)
+            test_now = curr_epoch % self.config.fed_after_n_batches == 0
 
             # first evaluate each remote model separately
             if test_now:
@@ -166,8 +163,8 @@ class Learner(object):
             return_ids=[0]
         )
         logger.info(
-            "Training round: %s, worker: %s, avg_loss: %s" %
-            (curr_round, worker.id, loss.mean())
+            "Training round: %s, worker: %s, avg_loss: %.4f" %
+            (curr_round, worker.id, loss.mean().item())
         )
 
         model = train_config.model_ptr.get().obj
@@ -195,23 +192,11 @@ class Learner(object):
             epochs=1
         )
         train_config.send(worker)
-
-        result = worker.evaluate(
+        test_loss, eval_metrics = worker.evaluate(
             dataset_key=self.config.test_dataset_name,
-            return_histograms=True,
-            nr_bins=10,
-            return_loss=True,
-            return_raw_accuracy=True,
+            metrics=self.config.metrics,
+            regression=self.config.regression
         )
-        test_loss = result["loss"]
-        correct = result["nr_correct_predictions"]
-        len_dataset = result["nr_predictions"]
-
-        logger.info(
-            "%s: Test set: Average loss: %s, Accuracy: %s/%s (%s)",
-            model_identifier,
-            "{:.4f}".format(test_loss),
-            correct,
-            len_dataset,
-            "{:.2f}".format(100.0 * correct / len_dataset),
-        )
+        logger.info("%s: Test set: Average loss: %.4f" % (model_identifier, test_loss))
+        for metric, metric_value in eval_metrics:
+            logger.info("\t%s: %.4f" % (metric, metric_value))
