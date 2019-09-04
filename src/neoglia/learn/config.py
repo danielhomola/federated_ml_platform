@@ -23,12 +23,13 @@ class LearnConfig(DotDict, dict):
             config_file=None,
             train_dataset_name=None,
             test_dataset_name=None,
-            train_batch_size=64,
+            train_batch_size=128,
             test_batch_size=128,
-            train_epochs=40,
+            train_epochs=100,
             fed_after_n_batches=10,
             metrics=["accuracy"],
-            lr=0.1,
+            optimizer="SGD",
+            optimizer_params={"lr":0.1, "momentum":0.9},
             cuda=False,
             seed=42,
             save_model=True,
@@ -50,7 +51,8 @@ class LearnConfig(DotDict, dict):
                 remote worker before averaging global model.
             metrics (tuple<str>): Metrics to use for evaluation of the model. Use any
                 of: accuracy, precision, recall, mse, mae.
-            lr (float): Learning rate for the optimizer.
+            optimizer (str): Name of an optimizer in torch.optim module.
+            optimizer_params (dict): Dict of params for the optimizer.
             cuda (bool): Whether the remote workers have GPUs and CUDA enabled.
             seed (int): Seed for reproducibility.
             save_model (bool): Whether to save the global model. If yes, it is
@@ -67,7 +69,8 @@ class LearnConfig(DotDict, dict):
         self.__setitem__('train_epochs', train_epochs)
         self.__setitem__('fed_after_n_batches', fed_after_n_batches)
         self.__setitem__('metrics', metrics)
-        self.__setitem__('lr', lr)
+        self.__setitem__('optimizer', optimizer)
+        self.__setitem__('optimizer_params', optimizer_params)
         self.__setitem__('cuda', cuda)
         self.__setitem__('seed', seed)
         self.__setitem__('save_model', save_model)

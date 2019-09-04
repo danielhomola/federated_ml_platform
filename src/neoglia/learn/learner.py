@@ -126,9 +126,6 @@ class Learner(object):
                     model=self.model
                 )
 
-            # decay learning rate
-            self.config.lr = max(0.98 * self.config.lr, self.config.lr * 0.01)
-
         if self.config.save_model:
             model_name = "%s_model.pt" % self.config.train_dataset_name
             torch.save(self.model.state_dict(), model_name)
@@ -153,8 +150,8 @@ class Learner(object):
             shuffle=True,
             max_nr_batches=self.config.fed_after_n_batches,
             epochs=1,
-            optimizer="SGD",
-            optimizer_args={"lr": self.config.lr},
+            optimizer=self.config.optimizer,
+            optimizer_args=self.config.optimizer_params,
         )
         train_config.send(worker)
 
@@ -198,5 +195,5 @@ class Learner(object):
             regression=self.config.regression
         )
         logger.info("%s: Test set: Average loss: %.4f" % (model_identifier, test_loss))
-        for metric, metric_value in eval_metrics:
-            logger.info("\t%s: %.4f" % (metric, metric_value))
+        for metric, metric_value in eval_metrics.items():
+            logger.info("\t- %s: %.4f" % (metric, metric_value))
