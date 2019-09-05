@@ -1,0 +1,12 @@
+train_dataset_name: eicu_class_train
+test_dataset_name: eicu_class_test
+train_batch_size: 512
+test_batch_size: 1024
+fed_after_n_batches: 10
+train_epochs: 50
+metrics:
+  - pr_curve
+  - accuracy
+optimizer_params:
+  lr: 0.05
+  momentum: 0.9

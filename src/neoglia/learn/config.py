@@ -50,7 +50,7 @@ class LearnConfig(DotDict, dict):
             fed_after_n_batches (int): Number of training epochs performed on each
                 remote worker before averaging global model.
             metrics (tuple<str>): Metrics to use for evaluation of the model. Use any
-                of: accuracy, precision, recall, mse, mae.
+                of: accuracy, roc_curve, pr_curve, mse, mae.
             optimizer (str): Name of an optimizer in torch.optim module.
             optimizer_params (dict): Dict of params for the optimizer.
             cuda (bool): Whether the remote workers have GPUs and CUDA enabled.
@@ -76,16 +76,16 @@ class LearnConfig(DotDict, dict):
         self.__setitem__('save_model', save_model)
         self.__setitem__('verbose', verbose)
 
+        # if there was a config file provided, override the params that are define in it
+        if config_file is not None:
+            self.update(parse_yaml_file(config_file))
+
         # set class-reg variable
         self.__setitem__('regression', False)
 
         # check that we don't have incompatible metrics
         if "mse" in self.metrics or "mae" in self.metrics:
             error = "%s cannot be used with mse and mae!"
-            for metric in ["accuracy", "precision", "recall"]:
+            for metric in ["accuracy", "roc_curve", "pr_curve"]:
                 assert metric not in self.metrics, error % metric
             self.__setitem__('regression', True)
-
-        # if there was a config file provided, override the params that are define in it
-        if config_file is not None:
-            self.update(parse_yaml_file(config_file))

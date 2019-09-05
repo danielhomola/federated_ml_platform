@@ -60,14 +60,20 @@ def get_eicu_dataset(hospitalid, outcome):
     Sets up the eICU dataset for training or testing.
     """
     df_x = pd.read_csv('x.csv')
+    df_y = pd.read_csv('y.csv')
+
+    # delete rows where the outcome is missing
+    to_keep = ~(pd.isnull(df_y).sum(axis=1) > 0)
+    df_x = df_x[to_keep]
+    df_y = df_y[to_keep]
+
+    # restrict x and y to the required hospital or test set
     to_keep = df_x.hospitalid.values == hospitalid
     df_x.drop('hospitalid', axis=1, inplace=True)
     df_x = df_x[to_keep]
     scaler = RobustScaler(quantile_range=(10.0, 90.0))
     x = scaler.fit_transform(df_x.values)
-
-    # load and select outcome
-    y = pd.read_csv('y.csv')[outcome][to_keep].values
+    y = df_y[outcome][to_keep].values
 
     return sy.BaseDataset(
         data=torch.from_numpy(x.astype('float32')),

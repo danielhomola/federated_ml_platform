@@ -8,6 +8,8 @@ import yaml
 import logging
 from time import gmtime, strftime
 
+import matplotlib.pyplot as plt
+
 logger = logging.getLogger(__name__)
 
 
@@ -54,3 +56,27 @@ def setup_logging(logger, loglevel, std_err=True):
         format="[%(asctime)s] %(levelname)s:%(name)s:  %(message)s",
         handlers=handlers
     )
+
+
+def curve_plotter(x, y, legend, x_lab, y_lab):
+    """
+    Simple helper to plot the ROC and PR curves at evaluation time.
+    Args:
+        x (list<float>): quantity to plot on x axis
+        y (list<float>): quantity to plot on y axis
+        legend (str): legend
+        x_lab (str): x label
+        y_lab (str): y label
+
+    Returns:
+
+    """
+    plt.rcParams["figure.figsize"] = (16, 8)
+    plt.figure()
+    plt.plot(x, y, color='darkorange', label=legend)
+    plt.xlim([0.0, 1.05])
+    plt.ylim([0.0, 1.05])
+    plt.xlabel(x_lab)
+    plt.ylabel(y_lab)
+    plt.legend()
+    plt.show()

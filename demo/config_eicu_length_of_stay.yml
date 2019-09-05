@@ -1,0 +1,12 @@
+train_dataset_name: eicu_reg_train
+test_dataset_name: eicu_reg_test
+train_batch_size: 512
+test_batch_size: 1024
+fed_after_n_batches: 5
+train_epochs: 20
+metrics:
+  - mae
+  - mse
+optimizer_params:
+  lr: 0.005
+  momentum: 0.9
