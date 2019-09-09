@@ -7,11 +7,9 @@ import asyncio
 import nest_asyncio
 
 import torch
-import numpy as np
 import syft as sy
 from syft.frameworks.torch.federated import utils
-from sklearn.metrics import auc
-from neoglia.learn.utils import setup_logging, curve_plotter
+from neoglia.learn.utils import setup_logging, print_metrics
 
 logger = logging.getLogger(__name__)
 setup_logging(logger, logging.INFO)
@@ -193,29 +191,11 @@ class Learner(object):
             epochs=1
         )
         train_config.send(worker)
-        test_loss, eval_metrics = worker.evaluate(
+        test_loss, eval_metrics, ys = worker.evaluate(
             dataset_key=self.config.test_dataset_name,
             metrics=self.config.metrics,
             regression=self.config.regression
         )
         logger.info("%s: Test set: Average loss: %.4f" % (model_identifier, test_loss))
-        for metric, metric_value in eval_metrics.items():
-            if metric in ["roc_curve", "pr_curve"]:
-                x_lab = "FPR" if metric == "roc_curve" else "precision"
-                y_lab = "TPR" if metric == "roc_curve" else "recall"
-                x_val = metric_value[0] if metric == "roc_curve" else metric_value[1]
-                y_val = metric_value[1] if metric == "roc_curve" else metric_value[0]
-                metric = "%s AUC" % metric
-                try:
-                    metric_value = auc(x_val, y_val)
-                except:
-                    metric_value = np.nan
-                curve_plotter(
-                    x=x_val,
-                    y=y_val,
-                    legend="%s: %.4f" % (metric, metric_value),
-                    x_lab=x_lab,
-                    y_lab=y_lab
-                )
-            else:
-                logger.info("\t- %s: %.4f" % (metric, metric_value))
+        print_metrics(eval_metrics, ys)
+

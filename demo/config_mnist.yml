@@ -2,6 +2,9 @@ train_dataset_name: mnist_train
 test_dataset_name: mnist_test
 fed_after_n_batches: 10
 train_epochs: 50
+metrics:
+  - accuracy
+  - confusion_matrix
 optimizer_params:
   lr: 0.1
   momentum: 0.9

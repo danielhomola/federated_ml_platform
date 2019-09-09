@@ -50,7 +50,7 @@ class LearnConfig(DotDict, dict):
             fed_after_n_batches (int): Number of training epochs performed on each
                 remote worker before averaging global model.
             metrics (tuple<str>): Metrics to use for evaluation of the model. Use any
-                of: accuracy, roc_curve, pr_curve, mse, mae.
+                of: accuracy, confusion_matrix, roc_curve, pr_curve, mse, mae.
             optimizer (str): Name of an optimizer in torch.optim module.
             optimizer_params (dict): Dict of params for the optimizer.
             cuda (bool): Whether the remote workers have GPUs and CUDA enabled.
@@ -86,6 +86,6 @@ class LearnConfig(DotDict, dict):
         # check that we don't have incompatible metrics
         if "mse" in self.metrics or "mae" in self.metrics:
             error = "%s cannot be used with mse and mae!"
-            for metric in ["accuracy", "roc_curve", "pr_curve"]:
+            for metric in ["accuracy", "confusion_matrix", "roc_curve", "pr_curve"]:
                 assert metric not in self.metrics, error % metric
             self.__setitem__('regression', True)
