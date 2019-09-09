@@ -21,7 +21,8 @@ class Learner(object):
     """
     Federated learner object.
     """
-    def __init__(self, config, model, model_input_dim, loss_fn, workers):
+    def __init__(self, config, model, model_input_dim, loss_fn, workers,
+                 evaluate_each_model=True):
         """
         Constructor of the Learner.
 
@@ -32,12 +33,16 @@ class Learner(object):
             loss_fn (:class:`torch.jit.ScriptModule`): Loss function as TorchScript.
             workers (tuple(class:`syft.workers.WebsocketClientWorker`): Collection of
                 workers whose data to train on.
+            evaluate_each_model (bool): If True, all remote models are used to predict
+                the test set too in each evaluation round before the federated
+                averaging takes place. This allows for tracking remote model performance
         """
         self.config = config
         self.model = model
         self.model_input_dim = model_input_dim
         self.loss_fn = loss_fn
         self.workers = workers
+        self.evaluate_each_model = evaluate_each_model
         self.loop = asyncio.get_event_loop()
 
         # since we're running this from IPython we need to patch the loop
@@ -99,8 +104,7 @@ class Learner(object):
             test_now = curr_epoch % self.config.fed_after_n_batches == 0
 
             # first evaluate each remote model separately
-            if test_now:
-                np.set_printoptions(formatter={"float": "{: .0f}".format})
+            if test_now and self.evaluate_each_model:
                 for worker_id, worker_model, _ in results:
                     self._evaluate_model_on_worker(
                         model_identifier=worker_id,
